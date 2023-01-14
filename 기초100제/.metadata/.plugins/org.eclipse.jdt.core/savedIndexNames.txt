@@ -1,3 +1,0 @@
-INDEX VERSION 1.131+D:\알고리즘(자바)\기초100제\.metadata\.plugins\org.eclipse.jdt.core
-3512128236.index
-1153737595.index
