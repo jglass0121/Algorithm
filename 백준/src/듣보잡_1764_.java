@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.HashSet;
 
 
-public class µèº¸Àâ_1764_ {
+public class ï¿½èº¸ï¿½ï¿½_1764_ {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 		String[] st = br.readLine().split(" ");
