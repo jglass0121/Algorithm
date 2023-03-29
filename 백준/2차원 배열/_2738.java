@@ -2,45 +2,41 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class _2738 {
     public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int one = Integer.parseInt(st.nextToken());
+        int two = Integer.parseInt(st.nextToken());
 
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        System.out.println("a = " + a);
-        int b = sc.nextInt();
-        System.out.println("b = " + b);
+        int[][] arr1 = new int[one][two];
+        int[][] arr2 = new int[one][two];
 
-        try {
 
-            int[][] array2 = new int[a][b];
-            int[][] array = new int[a][b];
-            for (int i = 0; i < a; i++) {
-                System.out.println("i = " + i);
-                for (int j = 0; i < b; j++) {
-                    array[a][b] = sc.nextInt();
-                    System.out.println("array["+i+"]["+j+"] = " + array[a][b]);
-                }
+        for (int i = 0; i < one; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < two; j++) {
+                arr1[i][j] = Integer.parseInt(st.nextToken());
             }
-
-            for (int i = 0; i < a; i++) {
-                for (int j = 0; i < b; j++) {
-                    array2[a][b] = sc.nextInt();
-                }
+        }
+        for (int i = 0; i < one; i++) {
+            st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < two; j++) {
+                arr2[i][j] = Integer.parseInt(st.nextToken());
             }
-
-            for (int i = 0; i < a; i++) {
-                for (int j = 0; i < b; j++) {
-                    System.out.println(array[a][b] + array2[a][b]);
-                }
-                System.out.println();
-            }
-        } catch (NumberFormatException e) {
-
         }
 
+        StringBuilder sb = new StringBuilder();
 
+        for (int i = 0; i < one; i++) {
+            for (int j = 0; j < two; j++) {
+                sb.append(arr1[i][j] += arr2[i][j]).append(" ");
+            }
+            sb.append("\n");
+        }
+        System.out.println(sb);
 
 
 
