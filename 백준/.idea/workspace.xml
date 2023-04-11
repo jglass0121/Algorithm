@@ -5,21 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7259633a-c4c0-462a-a20d-aa4a92398aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/백준.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2차원 배열/_2738.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/String/_5622.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/src/main/java/org/example/_2884.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/condition/src/main/java/org/example/윤년.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/untitled/기본수학1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/백준.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L0/문자열밀기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L0/문자열안에문자열.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L0/아이스아메리카노.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L0/중복된_숫자_개수.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stack/src/_10828.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/듣보잡_1764_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/듣보잡_1764_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sort/src/main/java/org/example/_2751.java" beforeDir="false" afterPath="$PROJECT_DIR$/sort/src/main/java/org/example/_2751.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,23 +36,26 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KBCJMKqrJi1f7zFLjqAXYHYCSf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/알고리즘(자바)/백준",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/알고리즘(자바)/백준&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,6 +69,8 @@
       <workItem from="1677158664722" duration="137000" />
       <workItem from="1678963817656" duration="134000" />
       <workItem from="1679743765188" duration="3631000" />
+      <workItem from="1680765028699" duration="259000" />
+      <workItem from="1680795625887" duration="1256000" />
     </task>
     <servers />
   </component>
