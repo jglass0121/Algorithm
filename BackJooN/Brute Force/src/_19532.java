@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class _19532 {
+    static int a,b,c,e,d,f;
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc=new Scanner(System.in);
+        a=sc.nextInt();
+        b=sc.nextInt();
+        c=sc.nextInt();
+        d=sc.nextInt();
+        e=sc.nextInt();
+        f=sc.nextInt();
+        for (int i = -999; i < 1000; i++) {
+            for (int j = -999; j < 1000; j++) {
+                if(a*i+b*j==c && d*i+e*j==f) {
+                    System.out.println(i+" "+j);
+                    System.exit(0);
+                }
+            }
+        }
+
+    }
+
+}
