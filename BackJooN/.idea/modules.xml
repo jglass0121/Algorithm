@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BFS_DFS/BFS_DFS.iml" filepath="$PROJECT_DIR$/BFS_DFS/BFS_DFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BackJooN.iml" filepath="$PROJECT_DIR$/BackJooN.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Brute Force/Brute Force.iml" filepath="$PROJECT_DIR$/Brute Force/Brute Force.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Factors_multiples and decimals/Factors_multiples and decimals.iml" filepath="$PROJECT_DIR$/Factors_multiples and decimals/Factors_multiples and decimals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QuickSort/QuickSort.iml" filepath="$PROJECT_DIR$/QuickSort/QuickSort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stack/Stack.iml" filepath="$PROJECT_DIR$/Stack/Stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cumulative sum/cumulative sum.iml" filepath="$PROJECT_DIR$/cumulative sum/cumulative sum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/factorial/factorial.iml" filepath="$PROJECT_DIR$/factorial/factorial.iml" />
+    </modules>
+  </component>
+</project>

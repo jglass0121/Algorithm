@@ -1,3 +1,5 @@
+package stack.src;
+
 import java.util.Scanner;
 import java.util.Stack;
 

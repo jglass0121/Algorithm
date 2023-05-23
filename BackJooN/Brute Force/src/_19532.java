@@ -20,7 +20,7 @@ public class _19532 {
             for (int j = -999; j < 1000; j++) {
                 if(a*i+b*j==c && d*i+e*j==f) {
                     System.out.println(i+" "+j);
-                    System.exit(0);
+                    System.exit(0); //강제종료
                 }
             }
         }
