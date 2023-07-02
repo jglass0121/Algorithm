@@ -34,10 +34,13 @@ public class _1966 {
                 boolean flag = true;
                 for (int q[] :queue) {
                     if (q[1] > now[1]) {
-                        flag = false;
+                            flag = false;
                         break;
                     }
                 }
+                System.out.println("flag = " + flag);
+
+                
                 if (flag) {
                     cnt++;
                     if (now[0] == M) {

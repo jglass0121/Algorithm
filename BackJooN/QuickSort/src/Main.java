@@ -4,8 +4,8 @@ public class Main {
     }
 
     private static void quickSort(int[] arr, int start, int end) {
-        int part2 = partition(arr, start, end);
-        if (start < part2 - 1) {
+        int part2 = partition(arr, start, end); //start
+        if (start < part2 - 1) {// 오른쪽 파티션이 시작점에서 한 개 이상 차이가 날 때만(쏠려있지 않은 경우에만) 함수를 재귀적으로 호출하게 함
             quickSort(arr,start,part2-1);
         }
         if (part2 < end) {
@@ -16,6 +16,7 @@ public class Main {
 
     private static int partition(int[] arr, int start, int end) {
         int pivot = arr[(start + end) / 2];
+        System.out.println("pivot = " + pivot);
         while (start <= end) {
             while (arr[start]<pivot) start++;
             while (arr[end]>pivot) end--;
@@ -25,6 +26,7 @@ public class Main {
                 end--;
             }
         }
+        System.out.println("start = " + start);
         return start;
 
     }
