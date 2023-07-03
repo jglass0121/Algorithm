@@ -21,58 +21,40 @@ public class _개인정보수집유효기간 {
     }
 
     private static int[] solution(String today, String[] terms, String[] privacies) {
+        List<Integer> answer = new ArrayList();
         HashMap<String, Integer> map = new HashMap<>();
+
         for (int i = 0; i < terms.length; i++) {
             String[] split = terms[i].split(" ");
             int split2 = Integer.parseInt(split[1]);
             map.put(split[0],split2);
         }
-        today = today.replace(".","/");
-        Date todatDate = new Date(today);
-        LinkedList<Integer> list = new LinkedList();
+
+
+        String[] todays = today.split("\\.");
+
+        //모두 일로 변경
+        int Totaltoday =  (Integer.parseInt(todays[0]) * 12 * 28 )+(Integer.parseInt(todays[1])* 28 )+(Integer.parseInt(todays[2]));
 
         for (int i = 0; i < privacies.length; i++) {
-            String[] split = privacies[i].split(" ");
+            String[] privacy = privacies[i].split(" ");
 
-            String date = split[0].replace(".", "/");
-            String rank = split[1];
-
-            Integer month = map.get(rank);
-
-            //int m = m + month;
-            Date dates = new Date(date);
-
-            month = month + (dates.getMonth());
-            dates.setMonth(month);
-            dates.setDate(dates.getDate());
-
-            if (month > 12) {
-                if (dates.getDate() == 1) {
-                    dates.setMonth(month-1);
-                    dates.setDate(28);
-                }
-            } else {
-                dates.setDate(dates.getDate()-1);
+            if (getDate(privacy[0]) + (map.get(privacy[1]) * 28) <= Totaltoday) {
+                answer.add(i + 1);
             }
-
-
-
-            if (todatDate.after(dates)) {
-                list.add(i + 1);
-
-            }
-
-
+        }
+        return answer.stream().mapToInt(i -> i).toArray();
         }
 
 
-        List<Integer> lists = list.stream().collect(Collectors.toList());
-        int[] answer = new int[lists.size()];
-        for (int i = 0; i < lists.size(); i++) {
-            answer[i] = (int) lists.get(i);
-        }
-
-        return answer;
-
+        private static int getDate(String today) {
+        String[] date = today.split("\\.");
+        int year = Integer.parseInt(date[0]);
+        int month = Integer.parseInt(date[1]);
+        int day = Integer.parseInt(date[2]);
+        return (year * 12 * 28) + (month * 28) + day;
     }
+
+
+
 }
