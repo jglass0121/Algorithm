@@ -16,6 +16,7 @@ public class _신규_아이디_추천 {
         answer=answer.replaceAll("[.]{2,}", ".");
         answer=answer.replaceAll("^[.]|[.]$", "");
 
+
         if (answer =="") {
             answer += "a";
         }

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DFS_BFS/DFS_BFS.iml" filepath="$PROJECT_DIR$/DFS_BFS/DFS_BFS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DP/DP.iml" filepath="$PROJECT_DIR$/DP/DP.iml" />
       <module fileurl="file://$PROJECT_DIR$/Implement/Implement.iml" filepath="$PROJECT_DIR$/Implement/Implement.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThisisCodingTest.iml" filepath="$PROJECT_DIR$/ThisisCodingTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/binary_search/binary_search.iml" filepath="$PROJECT_DIR$/binary_search/binary_search.iml" />

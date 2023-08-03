@@ -29,7 +29,7 @@ public class BFS_Queue {
             ListIterator<Integer> iter = adj[s].listIterator();
             while (iter.hasNext()) {
                 Integer n = iter.next();
-                if (!visited[n]) { //백트래킹
+                if (!visited[n]) {
                     visited[n] = true;
                     queue.add(n);
                 }

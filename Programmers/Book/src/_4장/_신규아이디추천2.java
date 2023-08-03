@@ -25,6 +25,7 @@ public class _신규아이디추천2 {
                 sb.replace(sb.length() - 1, sb.length(), "");
             }
         }
+
         if (sb.length() < 3) {
             while (sb.length() < 3) {
 
