@@ -17,9 +17,5 @@ public class 특정수2 {
 
         int i = Arrays.binarySearch(arr, x); //첫수
 
-
-
-
-
     }
 }

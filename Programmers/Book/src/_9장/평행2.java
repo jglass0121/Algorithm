@@ -12,7 +12,7 @@ public class 평행2 {
     }
 
     private static int solution(int[][] dots) {
-        int answer = 0;
+        int answer  = 0;
         ArrayList<Double> arr = new ArrayList<>();
         for (int i = 0; i < dots.length - 1; i++) {
             if (answer == 1) {

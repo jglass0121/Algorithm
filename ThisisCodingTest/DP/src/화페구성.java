@@ -20,6 +20,7 @@ public class 화페구성 {
                 if (dp[j - arr[i]] != 10001) {
                     dp[j] = Math.min(dp[j], dp[j - arr[i]] + 1);
                 }
+                System.out.println("dp["+j+"] = " + dp[j]);
             }
         }
         if (dp[two] == 10001) {

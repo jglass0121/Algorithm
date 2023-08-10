@@ -27,6 +27,7 @@ public class 불량사용자 {
 
     }
 
+    //불량 아이디 별로 조건에 만족하는 아이디를 HashSet에 넣어준다.
     private void dfs(HashSet<String> set, int depth) {
         if (depth == bannedIds.length) {
             result.add(set);
@@ -39,9 +40,6 @@ public class 불량사용자 {
             if (check(userIds[i], bannedIds[depth])) {
                 set.add(userIds[i]);
                 dfs(new HashSet<>(set), depth + 1);
-                System.out.println("set = " + set.size());
-                System.out.println("userIds[i] = " + userIds[i]);
-
                  set.remove(userIds[i]);
             }
         }

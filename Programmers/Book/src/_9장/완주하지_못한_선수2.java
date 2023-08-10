@@ -15,6 +15,7 @@ public class 완주하지_못한_선수2 {
     private static String solution(String[] participant, String[] completion) {
         Arrays.sort(participant); //이름 순으로 정렬
         Arrays.sort(completion); // 이름 순으로 정렬
+
         //참가자와 완주자의 이름을 비교해서 다르면, 완주를 못한 사람이기 때문에 그 값을 return
         for(int i=0; i<completion.length; i++){
             if(!participant[i].equals(completion[i])){

@@ -32,7 +32,7 @@ public class 공유기설치 {
          *  Upper Bound는 탐색 값을 초과하는 첫 번째 값을 가리키므로,
          *  1을 빼준 값이 조건식을 만족하는 최댓값이 된다.
          */
-        System.out.println(lo-1);
+        System.out.println(hi-1);
     }
 
     private static int find_binary(int distance) {

@@ -30,6 +30,7 @@ public class 떡볶이_떡_만들기 {
                 max = mid;
                 start = mid + 1;
             }
+
         }
         return max;
     }

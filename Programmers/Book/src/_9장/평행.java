@@ -8,8 +8,6 @@ public class 평행 {
         int[][] dots = {{1,1},{2,2},{3,3},{50,100}};
 
         System.out.println(solution(dots));
-        ;
-
     }
 
     private static int solution(int[][] dots) {

@@ -25,6 +25,7 @@ public class 숫자2 {
             int num = arr2[j];
 
             int lower = lower(num, arr1);
+            System.out.println("lower = " + lower);
             int upperbinary = upper(num,arr1);
             int i = upperbinary - lower;
             arr2[j] = i;
