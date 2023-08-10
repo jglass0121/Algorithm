@@ -8,11 +8,6 @@ public class 푸드파이트대회 {
     }
 
     private static String solution(int[] food) {
-        //0은 물
-        //1부터
-        //만약 1일경우 건너띰
-        // 몫을 구함
-
         StringBuilder sb = new StringBuilder();
         StringBuilder sb2 = new StringBuilder();
         String str = "";

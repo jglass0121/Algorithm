@@ -17,12 +17,10 @@ public class 둘만의_암호 {
         String answer = "";
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            System.out.println("c = " + c);
 
             int count = 1;
             while (count <= index) {
                 ++c;
-                System.out.println("c = " + c);
                 if (c > 'z') {
                     c -= 26;
                 }

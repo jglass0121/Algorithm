@@ -23,7 +23,6 @@ public class 카드뭉치 {
         for (int i = 0; i < goal.length; i++) {
             if (goal[i].equals(card1.split(" ")[0])) {
                 card1 = card1.replaceFirst(goal[i], "").trim();
-                System.out.println("card1 = "+card1);
                 continue;
 
             } else if (goal[i].equals(card2.split(" ")[0])) {

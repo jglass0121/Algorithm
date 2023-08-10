@@ -19,14 +19,10 @@ public class 달리기_경주 {
     private static  String[] solution(String[] players, String[] callings) {
 
         String[] answer = {};
-        System.out.println("Arrays.toString(players) = " + Arrays.toString(players));
-
         HashMap<String, Integer> rankMap = new HashMap<>();
         for (int i = 0; i < players.length; i++) {
             rankMap.put(players[i],i);
         }
-
-        System.out.println("rankMap.toString() = " + rankMap.toString());
 
         for (String player:callings ) {
 

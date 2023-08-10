@@ -24,7 +24,7 @@ public class 대충_만든_자판 {
                 }
             }
         }
-        System.out.println("hm = " + hm);
+
         for (int i = 0; i < target.length; i++) {
             int cnt = 0;
             for (int j = 0; j < target[i].length(); j++) {
@@ -36,11 +36,9 @@ public class 대충_만든_자판 {
                     cnt += hm.get(c);
                 }
             }
-            System.out.println("cnt = " + cnt);
             ret[i] = cnt == 0 ? -1 : cnt;
         }
 
-        System.out.println(Arrays.toString(ret));
         return ret;
 
 
