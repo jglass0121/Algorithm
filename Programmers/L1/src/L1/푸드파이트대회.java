@@ -4,7 +4,6 @@ public class 푸드파이트대회 {
     public static void main(String[] args) {
         int[] food = {1, 7, 1, 2};
         System.out.println(solution(food));
-        ;
     }
 
     private static String solution(int[] food) {
