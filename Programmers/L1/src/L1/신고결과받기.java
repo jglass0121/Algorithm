@@ -19,18 +19,31 @@ public class 신고결과받기 {
 
     }
 
-    private static void solution(String[] idList, String[] report, int k) {
-        HashMap<String, LinkedList<String>> map = new HashMap<>();
+    private static int[] solution(String[] idList, String[] report, int k) {
+        int[] answer = new int[idList.length];
+        Map<String, HashSet<String>> map = new HashMap<>();
+        Map<String, Integer> idxMap = new HashMap<>();
+
+        for (int i = 0; i < idList.length; i++) {
+            String name = idList[i];
+            map.put(name, new HashSet<>()); //hashset초기화 시켜준다.
+            idxMap.put(name, i);
+        }
 
         for (int i = 0; i < report.length; i++) {
             String key = report[i].split(" ")[0];
             String value = report[i].split(" ")[1];
-            LinkedList<String> str = new LinkedList<>();
-            str.add(value);
-            map.put(key, str);
+            map.get(value).add(key);
         }
 
-        System.out.println("map = " + map);
-
+        for (int i = 0; i < idList.length; i++) {
+            HashSet<String> send = map.get(idList[i]);
+            if (send.size() >= k) { //hashSet의 size가 제한수를 넘을 경우
+                for (String name : send) {
+                    answer[idxMap.get(name)]++;
+                }
+            }
+        }
+        return answer;
     }
 }
