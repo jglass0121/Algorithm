@@ -1,9 +1,6 @@
 package _7장;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class 가장큰수 {
     public static void main(String[] args) {
@@ -12,25 +9,25 @@ public class 가장큰수 {
 
     }
 
-    private static String solution(int[] numbers) {
-        List<String> list = new ArrayList<>();
+    private static void solution(int[] numbers) {
+        String[] strings = new String[numbers.length];
         for (int i = 0; i < numbers.length; i++) {
-            int number = numbers[i];
-            String s = "" + number;
-            char c = s.charAt(0);
-            String s1 = c + s;
-            list.add(s1);
+            strings[i] = Integer.toString(numbers[i]);
         }
 
-        Collections.sort(list,Collections.reverseOrder());
-        String answer = "";
-        for (int i = 0; i < list.size(); i++) {
-            String substring = list.get(i).substring(1);
-            answer += substring;
+        Arrays.sort(strings, new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                System.out.println("o1 = " + o1);
+                System.out.println("o2 = " + o2);
 
-        }
+                System.out.println(o2+o1);
+                System.out.println(o1+o2);
 
-        return answer;
+                System.out.println();
+                return (o2+o1).compareTo(o1+o2);
 
+            }
+        });
     }
 }
