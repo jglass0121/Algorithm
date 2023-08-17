@@ -48,10 +48,6 @@ public class BFS_Queue {
         bfsQueue.addEdge(2, 4);
         bfsQueue.addEdge(2, 5);
         bfsQueue.BFS(1);
-
-
-
-
     }
 
 

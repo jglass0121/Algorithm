@@ -31,12 +31,7 @@ public class _2178 {
             String s = st2.nextToken();
             for (int k = 0; k < s.length(); k++) {
                 arr[i][k] = Integer.parseInt(String.valueOf(s.charAt(k)));
-
-
             }
-
-
-
         }
 
         for (int i = 0; i < a; i++) {
