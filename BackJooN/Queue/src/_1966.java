@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * 못품
  *  문서의 ‘중요도’
  */
 public class _1966 {
@@ -23,17 +22,13 @@ public class _1966 {
                 queue.add(new int[] {j,sc.nextInt()});
             }
 
-            for (int[] ints : queue) {
-                System.out.println("ints[0] = " + ints[0]);
-                System.out.println("ints[1] = " + ints[1]);
-            }
+
 
             while (true) {
                 int now[] = queue.remove();
-                System.out.println("Arrays.toString(now) = " + Arrays.toString(now));
                 boolean flag = true;
                 for (int q[] :queue) {
-                    if (q[1] > now[1]) {
+                    if (q[1] > now[1]) { //중요도가 큰 것이 있으면 false
                             flag = false;
                         break;
                     }

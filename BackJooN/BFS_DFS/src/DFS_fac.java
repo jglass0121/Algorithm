@@ -18,12 +18,13 @@ public class DFS_fac {
     }
 
     public static void main(String[] args) {
+
         // 그래프 초기화
         for (int i = 0; i < 9; i++) {
             graph.add(new ArrayList<Integer>());
         }
 
-        // 노드 1에 연결된 노드 정보 저장 
+        // 노드 1에 연결된 노드 정보 저장
         graph.get(1).add(2);
         graph.get(1).add(3);
         graph.get(1).add(8);
