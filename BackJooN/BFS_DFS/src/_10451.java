@@ -14,7 +14,6 @@ public class _10451 {
             StringTokenizer st = new StringTokenizer(sc.nextLine());
             for (int j = 1; j < arr.length; j++) {
                 arr[j] = Integer.parseInt(st.nextToken());
-                System.out.println("arr[j] = " + arr[j]);
 
             }
 
