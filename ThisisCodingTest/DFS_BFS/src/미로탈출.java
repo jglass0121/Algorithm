@@ -61,7 +61,7 @@ public class 미로탈출 {
                 if (graph[nx][ny] == 0) continue;
                 // 해당 노드를 처음 방문하는 경우에만 최단 거리 기록
                 if (graph[nx][ny] == 1) {
-                    graph[nx][ny] = graph[x][y] + 1;
+                    graph[nx][ny] = graph[x][y] + 1; //이전 노드 +1
                     visit[x][y] = true;
                     //방문하지 않는 것만계산
                     if (!visit[nx][ny]) {

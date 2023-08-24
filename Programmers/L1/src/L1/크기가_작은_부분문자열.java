@@ -5,10 +5,10 @@ public class 크기가_작은_부분문자열 {
         String t = "3141592";
         String p = "271";
 
-        solution(t, p);
+        System.out.println(solution(t, p));
     }
 
-    private static void solution(String t, String p) {
+    private static int solution(String t, String p) {
         int pl = p.length();
 
 
@@ -20,6 +20,6 @@ public class 크기가_작은_부분문자열 {
             }
         }
 
-
+        return reslut;
     }
 }

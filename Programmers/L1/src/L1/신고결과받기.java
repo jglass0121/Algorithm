@@ -31,8 +31,8 @@ public class 신고결과받기 {
         }
 
         for (int i = 0; i < report.length; i++) {
-            String key = report[i].split(" ")[0];
-            String value = report[i].split(" ")[1];
+            String key = report[i].split(" ")[0]; //신고자
+            String value = report[i].split(" ")[1]; //가해자
             map.get(value).add(key);
         }
 

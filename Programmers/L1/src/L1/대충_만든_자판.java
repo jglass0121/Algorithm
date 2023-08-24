@@ -19,7 +19,7 @@ public class 대충_만든_자판 {
             for (int i = 0; i < key.length(); i++) {
                 char c = key.charAt(i);
                 System.out.println("c = " + c);
-                if (!hm.containsKey(c) || i < hm.get(c)) { //1 < 2
+                if (!hm.containsKey(c) || i < hm.get(c)) { //1 < 2 더 작은 경우
                     hm.put(c, i + 1); // B 2
                 }
             }
