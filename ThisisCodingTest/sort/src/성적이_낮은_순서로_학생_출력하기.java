@@ -35,9 +35,22 @@ public class 성적이_낮은_순서로_학생_출력하기
         }
 
         // 정렬 후 출력
-        students.stream().sorted(Comparator.comparing(Student::getScore))
-                .forEach(s -> System.out.print(s.getName() + " "));
+//        students.stream().sorted(Comparator.comparing(Student::getScore))
+//                .forEach(s -> System.out.print(s.getName() + " "));
+
+
+        students.sort(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                return o1.score - o2.score;
+            }
+        });
+
+
+        students.forEach(s -> System.out.println(s.getName() + " "));
+
 
 
     }
 }
+
