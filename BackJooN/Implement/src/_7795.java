@@ -8,33 +8,45 @@ import java.util.StringTokenizer;
 public class _7795 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int T = Integer.parseInt(br.readLine());
-        for (int i = 0; i < T; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
-            int A = Integer.parseInt(st.nextToken());
-            int B = Integer.parseInt(st.nextToken());
-            int[] Asize = new int[A];
-            int[] Bsize = new int[B];
-            st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < A; j++) // A 사이즈 입력
-                Asize[j] = Integer.parseInt(st.nextToken());
-            st = new StringTokenizer(br.readLine());
-            for (int k = 0; k < B; k++) // B 사이즈 입력
-                Bsize[k] = Integer.parseInt(st.nextToken());
+        int num = Integer.parseInt(br.readLine());
+        for (int i = 0; i < num; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
 
-            Arrays.sort(Asize); // 배열 정렬
-            Arrays.sort(Bsize);
-            int count = 0;
-            for (int j = 0; j < Asize.length; j++) {
-                for (int k = 0; k < Bsize.length; k++) {
-                    if (Asize[j] <= Bsize[k]) {
+            int[] arr1 = new int[a];
+            String[] split = br.readLine().split(" ");
+            for (int j = 0; j < split.length; j++) {
+                arr1[j] = Integer.parseInt(split[j]);
+            }
+
+            int[] arr2 = new int[b];
+            String[] split2 = br.readLine().split(" ");
+            for (int j = 0; j < split2.length; j++) {
+                arr2[j] = Integer.parseInt(split2[j]);
+            }
+
+
+            Arrays.sort(arr1);
+            Arrays.sort(arr2);
+
+            int result = 0;
+            for (int j = 0; j < arr1.length; j++) {
+                int c =  arr1[j];
+                for (int k = 0; k < arr2.length; k++) {
+                    int d =  arr2[k];
+                    if (c <= d) {
                         break;
-                    } else
-                        count++;
+                    } else {
+                        result++;
+                    }
                 }
             }
-            System.out.println(count);
+
+            System.out.println( result);
+
 
         }
+
     }
 }

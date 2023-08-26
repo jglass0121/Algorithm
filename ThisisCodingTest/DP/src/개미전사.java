@@ -9,6 +9,7 @@ public class 개미전사 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        
         d[0] = arr[0];
         d[1] = Math.max(arr[0], arr[1]); //d[1]은 0번째와 1번째 비교하여 더 큰 값 1개이기에
 

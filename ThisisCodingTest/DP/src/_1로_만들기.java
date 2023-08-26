@@ -7,8 +7,9 @@ public class _1로_만들기 {
         System.out.println(fibo(num));
     }
 
-    static int[]  dp = new int[100];
-    //1의 경우 자기자신이 1이기에 연산 수행x -> 0으로 초기화 
+    static int[]  dp = new int[100]; //수
+
+    //1의 경우 자기자신이 1이기에 연산 수행x ->  0으로 초기화
     private static int fibo(int num) {
         for (int i = 2; i <= num; i++) {
             dp[i] = dp[i - 1] + 1;
