@@ -7,6 +7,7 @@ public class 정렬된_배열에서_특정수의_개수 {
             int mid = (start + end) / 2;
             if (arr[mid] >= target) end = mid;
             else start = mid + 1;
+
         }
         return end;
     }
@@ -16,6 +17,7 @@ public class 정렬된_배열에서_특정수의_개수 {
             int mid = (start + end) / 2;
             if (arr[mid] > target) end = mid;
             else start = mid + 1;
+
         }
         return end;
     }

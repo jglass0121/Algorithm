@@ -1,14 +1,13 @@
 import java.util.*;
 
 public class _18352 {
-
-    // 도시의 개수, 도로의 개수, 거리 정보, 출발 도시 번호
-    public static int n, m, k, x;
-    public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
-    // 모든 도시에 대한 최단 거리 초기화
-    public static int[] d = new int[300001];
+    static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+    static int n, m, k, x;
+    static int[] d = new int[300001]; // 최단거리 저장 배열
 
     public static void main(String[] args) {
+
+        // TODO Auto-generated method stub
         Scanner sc = new Scanner(System.in);
 
         n = sc.nextInt();
@@ -16,40 +15,43 @@ public class _18352 {
         k = sc.nextInt();
         x = sc.nextInt();
 
-        // 그래피 및 최단 거리 테이블 초기화
+        // 연결리스트에 노드 추가
         for (int i = 0; i <= n; i++) {
             graph.add(new ArrayList<Integer>());
-            d[i] = -1;
+            d[i] = -1; // 최단거리 -1로 초기화
         }
 
-        // 모든 도로 정보 입력 받기
+        // 간선 정보 입력
         for (int i = 0; i < m; i++) {
             int a = sc.nextInt();
             int b = sc.nextInt();
             graph.get(a).add(b);
         }
 
-        // 출발 도시까지의 거리는 0으로 설정
-        d[x] = 0;
+        /*
+         * BFS 알고리즘
+         *
+         * 모든 도로의 거리가 1이기 때문에 BFS를 사용하여
+         * 최단거리를 구할 수 있다.
+         */
 
-        // 너비 우선 탐색(BFS) 수행
-        Queue<Integer> q = new LinkedList<Integer>();
+        d[x] = 0; // 시작지점의 최단거리 값 0으로 초기화
+        Queue<Integer> q = new LinkedList<>();
         q.offer(x);
         while (!q.isEmpty()) {
             int now = q.poll();
-            // 현재 도시에서 이동할 수 있는 모든 도시를 확인
+
             for (int i = 0; i < graph.get(now).size(); i++) {
-                int nextNode = graph.get(now).get(i);
-                // 아직 방문하지 않은 도시라면
-                if (d[nextNode] == -1) {
-                    // 최단 거리 갱신
-                    d[nextNode] = d[now] + 1;
-                    q.offer(nextNode);
+                int next = graph.get(now).get(i);
+                if (d[next] == -1) {
+                    // 도로의 거리가 1이기 때문에 이전 최단거리에 +1한 값 저장
+                    d[next] = d[now] + 1;
+                    q.offer(next);
                 }
             }
         }
 
-        // 최단 거리가 K인 모든 도시의 번호를 오름차순으로 출력
+        // 최단거리가 k인 노드 찾기
         boolean check = false;
         for (int i = 1; i <= n; i++) {
             if (d[i] == k) {
@@ -58,7 +60,9 @@ public class _18352 {
             }
         }
 
-        // 만약 최단 거리가 K인 도시가 없다면, -1 출력
-        if (!check) System.out.println(-1);
+        // 최단거리가 k인 노드가 없다면 -1 출력
+        if (check == false)
+            System.out.println(-1);
     }
+
 }
