@@ -28,7 +28,6 @@ public class DFS_factorial {
         ListIterator<Integer> iterator = adj[v].listIterator();
         while (iterator.hasNext()) {
             Integer n = iterator.next();
-            System.out.println("iterator.next() = " + n);
             if (!visited[n]) {
                 DFSUtils(n, visited);
             }

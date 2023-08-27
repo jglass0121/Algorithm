@@ -11,7 +11,6 @@ public class 불량사용자 {
 
 
     public static void main(String[] args) {
-
         String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
         String[] banned_id = {"fr*d*", "abc1**"};
         불량사용자 a = new 불량사용자();
@@ -40,7 +39,7 @@ public class 불량사용자 {
             if (check(userIds[i], bannedIds[depth])) {
                 set.add(userIds[i]);
                 dfs(new HashSet<>(set), depth + 1);
-                 set.remove(userIds[i]);
+                set.remove(userIds[i]);
             }
         }
 

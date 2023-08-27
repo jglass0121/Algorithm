@@ -61,7 +61,6 @@ class Solution {
             visited[i] = true;
             dfs(depth + 1);
             System.out.println("priorities[depth] = " + priorities[depth]);
-
             visited[i] = false;
         }
     }

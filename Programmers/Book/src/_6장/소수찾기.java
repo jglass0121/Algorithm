@@ -3,8 +3,7 @@ package _6장;
 public class 소수찾기 {
     static String[] split;
     public static void main(String[] args) {
-         String number = "17";
-
+        String number = "17";
         solution(number);
     }
 

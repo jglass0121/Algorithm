@@ -27,6 +27,8 @@ public class _7795 {
             }
 
 
+            //  c : 1 1 3 7  8
+            //  d : 1 3 6
             Arrays.sort(arr1);
             Arrays.sort(arr2);
 
@@ -43,7 +45,7 @@ public class _7795 {
                 }
             }
 
-            System.out.println( result);
+            System.out.println(result);
 
 
         }
