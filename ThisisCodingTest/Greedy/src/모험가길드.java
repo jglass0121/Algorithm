@@ -23,6 +23,7 @@ public class 모험가길드 {
             }
         }
 
+
         System.out.println("result = " + result);
 
     }
