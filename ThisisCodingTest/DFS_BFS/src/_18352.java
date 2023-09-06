@@ -40,7 +40,6 @@ public class _18352 {
         q.offer(x);
         while (!q.isEmpty()) {
             int now = q.poll();
-
             for (int i = 0; i < graph.get(now).size(); i++) {
                 int next = graph.get(now).get(i);
                 if (d[next] == -1) {

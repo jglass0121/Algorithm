@@ -51,7 +51,7 @@ public class _16926 {
                 int ny = y + dy[idx];
 
                 // 범위 안이라면
-                if(nx < N-t && ny < M-t && nx >= t && ny >= t) {
+                if(nx < N-t && ny < M-t && nx >= t && ny >= t) { //회전 그룹을 위해
                     map[x][y] = map[nx][ny];
                     x = nx;
                     y = ny;

@@ -12,7 +12,7 @@ public class _신규_아이디_추천 {
     private static void solution(String str) {
         String answer = "";
         str= str.toLowerCase();
-        answer =str.replaceAll("[^0-9a-z-_.]", "");
+        answer =str.replaceAll("[^0-9a-z-_.]", ""); //[^] : not
         answer=answer.replaceAll("[.]{2,}", ".");
         answer=answer.replaceAll("^[.]|[.]$", "");
 
