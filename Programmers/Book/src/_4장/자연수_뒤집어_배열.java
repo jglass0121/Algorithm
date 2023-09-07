@@ -12,6 +12,8 @@ public class 자연수_뒤집어_배열 {
     }
 
     public int[] solution(long n) {
+        //        return new StringBuilder().append(n).reverse().chars().map(Character::getNumericValue).toArray();
+
         String  a = "" + n;
         String[] split = a.split("");
         int[] answer = new int[split.length];
