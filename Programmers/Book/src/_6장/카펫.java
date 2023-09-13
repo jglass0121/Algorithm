@@ -1,8 +1,6 @@
 package _6장;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 /**
  * 대각선 4
@@ -23,7 +21,7 @@ import java.util.stream.Collectors;
  * 
  * 24
  * 6,4
- * 8,3
+ * 8,3x
  */
 
 public class 카펫 {

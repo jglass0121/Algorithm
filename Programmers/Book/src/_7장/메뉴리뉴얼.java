@@ -54,9 +54,15 @@ public class 메뉴리뉴얼 {
             return;
         }
 
+
         for (int i = index; i < orderArray.length; i++) {
+            System.out.println("i = " + i); //다음 선택 문자 인덱스
+            System.out.println("index = " + index); // 현재 선택 문자
+            System.out.println("orderArray[i] = " + orderArray[i]);
             combination(menuCount, orderArray, i+1, current+orderArray[i], len);
+
         }
+        System.out.println();
 
 
     }

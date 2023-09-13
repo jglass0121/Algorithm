@@ -100,8 +100,16 @@ public class 미로탈출 {
 
         // BFS를 수행한 결과 출력
         System.out.println(bfs(0, 0));
-        long endTime = System.currentTimeMillis();
-        System.out.println(String.format("코드 실행 시간: %20dms", endTime - startTime));
+        // 2차원 리스트의 맵 정보 입력 받기
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(graph[i][j]+" ");
+            }
+            System.out.println();
+        }
+
+
+
 
     }
 
