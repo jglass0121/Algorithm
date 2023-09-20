@@ -2,7 +2,6 @@ import java.util.LinkedList;
 
 public class _4673 {
     public static void main(String[] args) {
-        LinkedList<Integer> list = new LinkedList<>();
         boolean[] a = new boolean[10001];
 
         for (int i = 1; i <= 10000; i++) {

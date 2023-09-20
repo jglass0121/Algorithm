@@ -15,7 +15,6 @@ public class _7568 {
         for (int i = 0; i < num; i++) {
             int rank = 1;
             for (int j = 0; j < num; j++) {
-
                 if (i == j) {
                     continue;
                 }

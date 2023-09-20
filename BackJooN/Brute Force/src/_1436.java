@@ -13,6 +13,5 @@ public class _1436 {
             }
         }
         System.out.println(number);
-
     }
 }
