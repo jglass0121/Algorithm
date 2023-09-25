@@ -36,6 +36,8 @@ public class 신고결과받기 {
             map.get(value).add(key);
         }
 
+        System.out.println("map = " + map);
+
         for (int i = 0; i < idList.length; i++) {
             HashSet<String> send = map.get(idList[i]);
             if (send.size() >= k) { //hashSet의 size가 제한수를 넘을 경우

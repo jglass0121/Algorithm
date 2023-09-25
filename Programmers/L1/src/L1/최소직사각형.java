@@ -9,7 +9,7 @@ public class 최소직사각형 {
 
     }
 
-    private static void solution(int[][] sizes) {
+    private static int solution(int[][] sizes) {
         int max_v = 0;
         int max_h = 0;
 
@@ -20,5 +20,10 @@ public class 최소직사각형 {
             max_h = Math.max(max_h, h);
 
             }
+
+
+        return max_v * max_h;
         }
+
+
 }

@@ -8,7 +8,7 @@ public class _1120 {
 
         int minAdditions = Integer.MAX_VALUE;
 
-        for (int i = 0; i <= B.length() - A.length(); i++) {
+        for (int i = 0; i <= B.length() - A.length(); i++) { //A를 삽입할 수 있는 모든 시작 위치
             int diffCount = 0;
             for (int j = 0; j < A.length(); j++) {
                 if (A.charAt(j) != B.charAt(i + j)) {
