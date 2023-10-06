@@ -9,17 +9,14 @@ public class 크기가_작은_부분문자열 {
     }
 
     private static int solution(String t, String p) {
-        int pl = p.length();
+        int len = p.length();
+        long num = Long.parseLong(p);
+        int result = 0;
 
-
-        int reslut = 0;
-        for (int i = 0; i < t.length()-pl+1; i++) {
-            int num = Integer.parseInt(t.substring(i, i + pl));
-            if (num <= Integer.parseInt(p)) {
-                reslut++;
-            }
+        for (int i = 0; i < t.length() - len + 1; i++) {
+            long diff = Long.parseLong(t.substring(i, i + len));
+            if (diff <= num) result++;
         }
-
-        return reslut;
+        return result;
     }
 }
