@@ -1,58 +1,56 @@
 package 실버2;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
 
 public class _종이의_개수 {
-    static int[][] arr;
-    static int[] res = new int[3];
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        arr = new int[num][num];
-        for (int i = 0; i < num; i++) {
-            for (int j = 0; j < num; j++) {
-                arr[i][j] = sc.nextInt();
-            }
+    static int[][] paper;
+    static int[] count = new int[3]; // 0, 1, -1의 개수를 저장하는 배열
 
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+
+        paper = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            for (int j = 0; j < n; j++) {
+                paper[i][j] = Integer.parseInt(st.nextToken());
+            }
         }
 
-        solve(0, 0, num);
+        divide(0, 0, n);
 
+        for (int i = 0; i < 3; i++) {
+            System.out.println(count[i]);
+        }
     }
 
-    private static void solve(int r, int c, int size) {
-        if (check(r, c, size)) {
-            int num = arr[r][c];
-            if (num == 0) {
-                res[1]++;
-            } else if (num == 1) {
-                res[2]++;
-            } else {
-                res[0]++;
-            }
-            return;
-        }
-
-
-        int newSize = size / 3;
-        for (int i = r; i < r + size; i += newSize) {
-            for (int j = c; j < c + size; j += newSize) {
-                solve(i, j, newSize);
-            }
-
-        }
-
-
-    }
-
-    private static boolean check(int r, int c, int size) {
-        for (int i = r; i < r + size; i++) {
-            for (int j = c; j < c + size; j++) {
-                if (arr[r][c] != arr[i][j]) {
+    static boolean isSame(int x, int y, int size) {
+        int val = paper[x][y];
+        for (int i = x; i < x + size; i++) {
+            for (int j = y; j < y + size; j++) {
+                if (paper[i][j] != val) {
                     return false;
                 }
             }
         }
-            return true;
+        return true;
+    }
+
+    static void divide(int x, int y, int size) {
+        if (isSame(x, y, size)) {
+            count[paper[x][y] + 1]++;
+        } else {
+            int newSize = size / 3;
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    divide(x + i * newSize, y + j * newSize, newSize);
+                }
+            }
+        }
     }
 }
