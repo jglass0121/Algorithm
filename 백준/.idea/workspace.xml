@@ -5,7 +5,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7259633a-c4c0-462a-a20d-aa4a92398aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ThisisCodingTest/Greedy/src/무지의_먹방_라이브.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_2331.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_2606.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/DP/src/_17484.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/Implement/src/_14567.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/Implement/src/_2468.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/Implement/src/_8979.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/Implement/src/실버3/_2659.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/binary search/src/_1654.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_1759.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_1759_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_1780.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_1992.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_2630.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_9095.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_10597.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_1182.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_15649.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_15650.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_15651.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/_backTracking/_156652.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_1902.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_1904.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_1905.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_1912.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_1915.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/codeUp/_2608.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/실버1/_2267.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/실버1/_2267_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/실버2/_23304.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/factorial/src/실버2/_6603.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/othergraph/othergraph.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/othergraph/src/_11265.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BackJooN/othergraph/src/_2623.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/Book/src/_11/_괄호회전하기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/Book/src/_11/_올바른괄호.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L0/_평균_구하기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_k번쨰수.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_x만큼_간격.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_나머지가_1이_되는_수_찾기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_성격.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_약수의개수와덧셈.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_약수의합.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_예산.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_핸드폰_번호_가리기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_햄버거_만들기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/콜라문제.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/sample/CopyOfRangeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Programmers/L1/src/우테코/_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThisisCodingTest/OtherGragh/src/_위상정렬.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ThisisCodingTest/ShortestDistance/src/_플로이드워셜.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/AdjacencyArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/AdjacencyArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_10451.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_10451.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_2178.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/_2178.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/미로탈출.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/BFS_DFS/src/미로탈출.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BackJooN/factorial/src/_24060.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BackJooN/Implement/src/실버3/_2108.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmers/Book/src/_7장/가장큰수.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmers/Book/src/_7장/가장큰수.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmers/L1/src/L1/_체육복.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/_체육복.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Programmers/L1/src/L1/공원_산책2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Programmers/L1/src/L1/공원_산책2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThisisCodingTest/DFS_BFS/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThisisCodingTest/DFS_BFS/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThisisCodingTest/DFS_BFS/src/미로탈출.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThisisCodingTest/DFS_BFS/src/미로탈출.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ThisisCodingTest/binary_search/src/숫자2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ThisisCodingTest/binary_search/src/숫자2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +126,7 @@
       <workItem from="1683809299267" duration="1454000" />
       <workItem from="1683854432767" duration="4500000" />
       <workItem from="1693571071765" duration="11000" />
+      <workItem from="1698645031353" duration="7000" />
     </task>
     <servers />
   </component>

@@ -12,57 +12,38 @@ public class _체육복 {
     }
 
     private static int solution(int n, int[] lost, int[] reserve) {
-        Arrays.sort(lost);
+        int answer = 0;
+
         Arrays.sort(reserve);
+        Arrays.sort(lost);
 
+        // 도난 당하지 않은 학생 수
+        answer = n - lost.length;
 
-        LinkedList<Integer> set = new LinkedList<Integer>();
-
+        // 여벌 체육복을 가져왔지만 도난당한 학생 수
+        // 다른 학생에게 체육복을 빌려줄 수 없음
         for (int i = 0; i < lost.length; i++) {
-            set.add(lost[i]);
+            for (int j = 0; j < reserve.length; j++) {
+                if (lost[i] == reserve[j]) {
+                    answer++;
+                    lost[i] = -1;
+                    reserve[j] = -1;
+                    break;
+                }
+            }
         }
 
-        n =  n - lost.length;
-        int[] visited = new int[31];
-        for (int i = 0; i < reserve.length; i++) {
-             visited[reserve[i]] += 1;
-        }
-
+        // 도난당했지만 체육복을 빌릴 수 있는 학생 수
         for (int i = 0; i < lost.length; i++) {
-            if (visited[lost[i]] != 0) {
-                visited[lost[i]] -= 1;
-                int index = lost[i];
-                int findIdx= set.indexOf(index);
-                set.remove(findIdx);
+            for (int j = 0; j < reserve.length; j++) {
+                if (lost[i] - 1 == reserve[j] || lost[i] + 1 == reserve[j]) {
+                    answer++;
+                    reserve[j] = -1;
+                    break;
+                }
             }
         }
 
-
-        System.out.println("set = " + set.size());
-
-        for (int i = 0; i < set.size(); i++) {
-            int one = set.get(i);
-
-            if(visited[one] != 0){
-                visited[one] -= 1;
-                n++;
-                continue;
-            }
-
-            if(visited[one-1] != 0){
-                visited[one - 1] -= 1;
-                n++;
-                continue;
-            }
-
-            if(visited[one+1] != 0){
-                visited[one + 1] -= 1;
-                n++;
-            }
-
-        }
-
-
-        return n;
+        return answer;
     }
 }

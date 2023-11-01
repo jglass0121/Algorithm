@@ -37,6 +37,20 @@ class ArrGraph {
             System.out.println();
         }
     }
+
+
+    public void print() {
+        for (int i =1; i < arrGraph.length; i++) {
+            System.out.print(i+" : ");
+            for (int j = 0; j < arrGraph[i].length; j++) {
+                if (arrGraph[i][j] == 1) {
+                    System.out.print(j+" ");
+                }
+            }
+            System.out.println();
+
+        }
+    }
 }
 
 public class AdjacencyArray {
@@ -55,6 +69,7 @@ public class AdjacencyArray {
         adjArr.put(4, 6);
 
         adjArr.printGraphToAdjArr();
+        adjArr.print();
     }
 
 }

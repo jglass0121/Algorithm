@@ -41,7 +41,7 @@ public class 숫자2 {
             int mid = (start + end) / 2;
             if (target <= arr[mid]) {
                 end = mid;
-                // 하한선을 내려줘서 target 왼쪽 값들 중dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+                // 하한선을 내려줘서 target 왼쪽 값들 중
                 // target 이상인 것들 중 가장 작은 인덱스 탐색
             } else {
                 start = mid + 1;

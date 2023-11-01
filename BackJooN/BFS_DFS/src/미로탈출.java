@@ -34,7 +34,7 @@ public class 미로탈출 {
         Queue<Node> q = new LinkedList<>();
         q.offer(new Node(x, y));
         // 큐가 빌 때까지 반복하기
-        while(!q.isEmpty()) { 
+        while(!q.isEmpty()) {
             Node node = q.poll();
             x = node.getX();
             y = node.getY();
@@ -52,7 +52,6 @@ public class 미로탈출 {
                     q.offer(new Node(nx, ny));
                 }
             }
-            System.out.println(graph[x][y]) ;
         }
         // 가장 오른쪽 아래까지의 최단 거리 반환
         return graph[n - 1][m - 1];
@@ -77,6 +76,14 @@ public class 미로탈출 {
 
         // BFS를 수행한 결과 출력
         System.out.println(v.bfs(0, 0));
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(graph[i][j]+" ");
+            }
+            System.out.println();
+        }
+
     }
 
 }

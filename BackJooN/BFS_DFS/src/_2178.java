@@ -14,17 +14,10 @@ public class _2178 {
         Scanner sc = new Scanner(System.in);
         StringTokenizer st = new StringTokenizer(sc.nextLine());
         int a = Integer.parseInt(st.nextToken());
-        System.out.println("a = " + a);
 
         int b = Integer.parseInt(st.nextToken());
-        System.out.println("b = " + b);
-
         Visited = new int[a][b];
-
         int[][] arr = new int[a][b];
-
-
-
         int j = 0;
         for (int i = 0; i < a; i++) {
             StringTokenizer st2 = new StringTokenizer(sc.nextLine());
@@ -49,9 +42,6 @@ public class _2178 {
 
         endRow = a - 1;
         endCol = b - 1;
-        System.out.println("endRow = " + endRow);
-        System.out.println("endCol = " + endCol);
-        System.out.println("arr[endRow][endCol] = " + arr[endRow][endCol]);
 
 
         push(arr,startRow,startCol);
@@ -87,7 +77,6 @@ public class _2178 {
         }
 
         return false;
-
     }
 
 }

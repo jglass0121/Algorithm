@@ -25,8 +25,10 @@ public class Main {
                 int ny = y + dy[i];
                 // 미로 찾기 공간을 벗어난 경우 무시
                 if (nx < 0 || nx >= n || ny < 0 || ny >= m) continue;
+
                 // 벽인 경우 무시
                 if (graph[nx][ny] == 0) continue;
+
                 // 해당 노드를 처음 방문하는 경우에만 최단 거리 기록
                 if (graph[nx][ny] == 1) {
                     graph[nx][ny] = graph[x][y] + 1;

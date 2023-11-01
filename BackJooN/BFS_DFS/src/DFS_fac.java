@@ -8,7 +8,7 @@ public class DFS_fac {
     // DFS 함수 정의
     public static void dfs(int x) {
         // 현재 노드를 방문 처리
-       visited[x] = true;
+        visited[x] = true;
         System.out.print(x + " ");
         // 현재 노드와 연결된 다른 노드를 재귀적으로 방문
         for (int i = 0; i < graph.get(x).size(); i++) {

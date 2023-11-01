@@ -46,8 +46,8 @@ public class 공원_산책2 {
                     if(park[moveH].substring(moveW,moveW+1).equals("X")){
                         break;
                     }
-                    if(i==move-1){
-                        startH=moveH;
+                    if(i==move-1){ // 마지막
+                        startH=moveH; //갱신
                         startW=moveW;
                     }
                 }
