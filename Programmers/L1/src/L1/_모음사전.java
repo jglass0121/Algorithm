@@ -1,29 +1,35 @@
 package L1;
 
 public class _모음사전 {
-    static char[] arr = {'A', 'E', 'I', 'O', 'U'};
-    static int cnt = 0;
+
+    static char[] aeiou = {'A','E','I','O','U'};
+    static int count = 0;
+    static boolean isStop = false;
+
     public static void main(String[] args) {
-        String word = "AAAAE";
-        solution("",0,word);
-        System.out.println(cnt);
-
-
+        System.out.println(solution("AAAAE"));
     }
 
-    private static void solution(String current,int depth,String target) {
 
-        if (current.equals(target)) {
+    public static int solution(String word) {
+        dfs(0, "", word);
+        return count;
+    }
+
+    public static void dfs(int depth, String next, String target) {
+        if (depth == 6) return;
+
+        if (next.equals(target)) {
+            isStop = true;
             return;
         }
-        if (depth == 5) {
-            return;
+
+        for (int i=0; i<5; i++) {
+            if (isStop) return;
+
+            if(depth + 1 < 6) count++;
+            dfs(depth + 1, next + aeiou[i], target);
         }
 
-        for (int i = 0; i < arr.length; i++) {
-            String newWord = current + arr[i];
-            cnt++;
-            solution(newWord, depth+1,target);
-        }
     }
 }
