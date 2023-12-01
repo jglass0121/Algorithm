@@ -7,7 +7,7 @@ public class 문자열압축 {
     }
 
     private static int solution(String s) {
-        int answer = s.length();
+        int answer = s.length(); //전체 길이
         int count = 1;
         for (int i = 1; i <= s.length() / 2; i++) {
             StringBuilder result = new StringBuilder();

@@ -30,7 +30,7 @@ public class 소수찾기 {
                 dfs(now + split[i], idx + 1, visited);
                 visited[i] = false;
             }
-
+            System.out.println();
         }
 
 

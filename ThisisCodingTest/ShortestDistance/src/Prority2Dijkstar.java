@@ -32,6 +32,7 @@ public class Prority2Dijkstar {
         dist = new int[v + 1];
         visit = new boolean[v + 1];
 
+        //초기화
         for (int i = 1; i <= v; i++) {
             graph[i] = new ArrayList<>();
             dist[i] = Integer.MAX_VALUE; //최대값으로 초기화, 최단거리를 찾기 위함.
@@ -70,7 +71,7 @@ public class Prority2Dijkstar {
                 continue;
             }
 
-            visit[now.v] = true;
+            visit[now.v] = true; //방문처리
 
             for (Node next : graph[now.v]) { //4, 5,3
 

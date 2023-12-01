@@ -6,12 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/BackJooN.iml" filepath="$PROJECT_DIR$/BackJooN.iml" />
       <module fileurl="file://$PROJECT_DIR$/Brute Force/Brute Force.iml" filepath="$PROJECT_DIR$/Brute Force/Brute Force.iml" />
       <module fileurl="file://$PROJECT_DIR$/DP/DP.iml" filepath="$PROJECT_DIR$/DP/DP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Divide_Conquer/Divide_Conquer.iml" filepath="$PROJECT_DIR$/Divide_Conquer/Divide_Conquer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Factors_multiples and decimals/Factors_multiples and decimals.iml" filepath="$PROJECT_DIR$/Factors_multiples and decimals/Factors_multiples and decimals.iml" />
       <module fileurl="file://$PROJECT_DIR$/Greedy/Greedy.iml" filepath="$PROJECT_DIR$/Greedy/Greedy.iml" />
       <module fileurl="file://$PROJECT_DIR$/HashMap/HashMao.iml" filepath="$PROJECT_DIR$/HashMap/HashMao.iml" />
       <module fileurl="file://$PROJECT_DIR$/ICPC/ICPC.iml" filepath="$PROJECT_DIR$/ICPC/ICPC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Implement/Implement.iml" filepath="$PROJECT_DIR$/Implement/Implement.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Priority_Queue/Priority_Queue.iml" filepath="$PROJECT_DIR$/Priority_Queue/Priority_Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shot_distance/Priority_Queue.iml" filepath="$PROJECT_DIR$/shot_distance/Priority_Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Queue/Queue.iml" filepath="$PROJECT_DIR$/Queue/Queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/QuickSort/QuickSort.iml" filepath="$PROJECT_DIR$/QuickSort/QuickSort.iml" />
       <module fileurl="file://$PROJECT_DIR$/SWTest/SWTest.iml" filepath="$PROJECT_DIR$/SWTest/SWTest.iml" />
@@ -19,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/binary search/binary search.iml" filepath="$PROJECT_DIR$/binary search/binary search.iml" />
       <module fileurl="file://$PROJECT_DIR$/cumulative sum/cumulative sum.iml" filepath="$PROJECT_DIR$/cumulative sum/cumulative sum.iml" />
       <module fileurl="file://$PROJECT_DIR$/factorial/factorial.iml" filepath="$PROJECT_DIR$/factorial/factorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/otherGraph.iml" filepath="$PROJECT_DIR$/.idea/modules/otherGraph.iml" />
       <module fileurl="file://$PROJECT_DIR$/sort/sort.iml" filepath="$PROJECT_DIR$/sort/sort.iml" />
     </modules>
   </component>

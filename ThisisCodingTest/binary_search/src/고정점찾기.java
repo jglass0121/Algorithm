@@ -9,7 +9,7 @@ public class 고정점찾기 {
         for (int i = 0; i <num; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println( binaryFind(arr,0,arr.length-1));
+        System.out.println(binaryFind(arr,0,arr.length-1));
 
 
     }

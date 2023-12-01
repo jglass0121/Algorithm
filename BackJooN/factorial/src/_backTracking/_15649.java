@@ -35,7 +35,6 @@ public class _15649 {
                 fac(cnt+1, res1);
                 visited[i] = false;
             }
-
         }
 
     }

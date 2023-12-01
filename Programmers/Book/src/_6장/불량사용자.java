@@ -2,26 +2,26 @@ package _6장;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class 불량사용자 {
     String[] userIds;
     String[] bannedIds;
-    boolean[] visited;
-    HashSet<HashSet<String>> result = new HashSet<>();
+    static HashSet<HashSet<String>> result = new HashSet<>();
 
 
     public static void main(String[] args) {
         String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
-        String[] banned_id = {"fr*d*", "abc1**"};
+        String[] banned_id = {"*rodo", "*rodo", "******"};
         불량사용자 a = new 불량사용자();
         a.solution(user_id, banned_id);
 
+        System.out.println(result.size());
     }
 
     private  void solution(String[] userId, String[] bannedId) {
         userIds = userId;
         bannedIds = bannedId;
-        visited = new boolean[userIds.length];
         dfs(new HashSet<>(), 0);
 
     }
