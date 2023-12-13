@@ -12,8 +12,6 @@ public class _단어변환 {
         boolean[] visited = new boolean[words.length];
          dfs(begin, target, words, visited, 0);
         return minCount == Integer.MAX_VALUE ? -1 : minCount;
-
-
     }
     private static int minCount = Integer.MAX_VALUE;
 

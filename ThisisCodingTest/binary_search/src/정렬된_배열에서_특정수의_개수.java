@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.*;
 
 public class 정렬된_배열에서_특정수의_개수 {
@@ -9,6 +10,8 @@ public class 정렬된_배열에서_특정수의_개수 {
             else start = mid + 1;
 
         }
+        System.out.println(" = " + Arrays.toString(arr));
+        System.out.println("end = " + end);
         return end;
     }
 
@@ -19,6 +22,10 @@ public class 정렬된_배열에서_특정수의_개수 {
             else start = mid + 1;
 
         }
+        System.out.println(" = " + Arrays.toString(arr));
+        System.out.println("endUppder = " + end);
+        System.out.println("start = " + start);
+
         return end;
     }
 
