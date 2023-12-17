@@ -8,10 +8,12 @@ public class 숫자정사각형 {
         int N = sc.nextInt();
         int M = sc.nextInt();
 
+        sc.nextLine();
         int[][] arr = new int[N][M];
         for (int i = 0; i < N; i++) {
+            String s = sc.nextLine();
             for (int j = 0; j < M; j++) {
-                arr[i][j] = sc.nextInt();
+                arr[i][j] = s.charAt(j) - '0';
             }
         }
 
@@ -32,7 +34,12 @@ public class 숫자정사각형 {
             }
 
             min--;
-        }
+        }  
+
+        System.out.println("min*min = " + min*min);
+
+
+
 
     }
 }
