@@ -1,6 +1,5 @@
 package _backTracking;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class _15649 {
