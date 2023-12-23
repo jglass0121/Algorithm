@@ -47,29 +47,7 @@ public class 자물쇠 {
         return true;
     }
 
-    private boolean check(int[][] key, int[][] lock, int x, int y) {
-        int n = lock.length;
-        int m = key.length;
 
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < m; j++) {
-                int lockX = x + i; // offset+i를 하여
-                int lockY = y + j;
-
-                if (lockX >= 0 && lockX < n && lockY >= 0 && lockY < n) {
-                    if (lock[lockX][lockY] + key[i][j] != 1) {
-                        return false;
-                    }
-                } else {
-                    if (key[i][j] != 0) {
-                        return false;
-                    }
-                }
-            }
-        }
-
-        return true;
-    }
 
     public static void main(String[] args) {
         자물쇠 solution = new 자물쇠();
