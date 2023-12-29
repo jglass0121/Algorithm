@@ -32,6 +32,12 @@ public class 떡볶이_떡_만들기 {
             }
 
         }
+        System.out.println("end = " + end);
+        System.out.println("start = " + start);
+        System.out.println("max = " + max);
+
+
+
         return max;
     }
 }

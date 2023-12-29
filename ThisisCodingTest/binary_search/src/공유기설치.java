@@ -18,6 +18,8 @@ public class 공유기설치 {
         int lo = 1;
         int hi = house[total - 1] - house[0] + 1;
 
+
+        //upper
         while (lo < hi) {
             int mid = (hi + lo) / 2;
 
