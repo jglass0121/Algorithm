@@ -21,6 +21,7 @@ public class 입국심사 {
             long mid = (left + right) / 2;
             long total = 0;
             for (int time : times) {
+                System.out.println("mid = " + mid);
                 total += mid / time;
             }
             if (total >= n) {
