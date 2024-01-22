@@ -27,7 +27,7 @@ bin/
 
 /explore/src/Main.java
 ./LeetCode.iml
-./src/
-
+./src/**
+.idea
 ### Mac OS ###
 .DS_Store
