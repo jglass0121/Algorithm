@@ -25,5 +25,9 @@ bin/
 ### VS Code ###
 .vscode/
 
+/explore/src/Main.java
+./LeetCode.iml
+./src/
+
 ### Mac OS ###
 .DS_Store
