@@ -22,10 +22,18 @@ public class 공유기설치 {
         //upper
         while (lo < hi) {
             int mid = (hi + lo) / 2;
-
+            /**
+             * mid 거리에 대해 설치 가능한 공유기 개수가 M 개수에 못미치면
+             * 거리를 좁혀야 하기 때문에 hi 를 줄인다.
+             */
             if (find_binary(mid) < num) {
                 hi = mid;
             } else {
+                /**
+                 * 설치 가능한 공유기 개수가 M 개수보다 크거나 같으면
+                 * 거리를 벌리면서 최소거리가 가질 수 있는 최대 거리를
+                 * 찾아낸다.
+                 */
                 lo = mid + 1;
             }
 
