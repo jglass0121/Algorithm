@@ -1,34 +1,32 @@
 package dfs_bfs;
 
 public class 타겟넘버 {
-
     public static void main(String[] args) {
-        int[] numbers = {4, 1, 2, 1};
-        int target= 4;
+        int[] numbers = {1, 1, 1, 1, 1};
+        int target = 3;
         System.out.println(solution(numbers, target));
     }
 
     private static int solution(int[] numbers, int target) {
-        dfs(numbers,0,target,0);
-        return cnt;
+
+        fac(numbers, 0, target,0);
+
+        return res;
 
     }
 
-    static int cnt = 0;
-    private static void dfs( int[] numbers,int depth, int target, int res) {
-        if (depth == numbers.length) {
-            if (target == res) {
-                cnt++;
+    static int res = 0;
+
+    private static void fac(int[] numbers, int deth, int target, int sum) {
+        if (deth == numbers.length) {
+            if (target == sum) {
+                res++;
             }
             return;
         }
 
-        int plus = res + numbers[depth];
-        int minus = res - numbers[depth];
+        fac(numbers, deth + 1, target, sum + numbers[deth]);
+        fac(numbers, deth + 1, target, sum - numbers[deth]);
 
-        dfs(numbers,depth+1,target,plus);
-        dfs(numbers,depth+1,target,minus);
     }
-
-
 }
