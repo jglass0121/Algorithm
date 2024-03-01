@@ -5,6 +5,7 @@ public class _단어변환 {
         String begin = "hit";
         String target = "cog";
         String[] words = {"hot", "dot", "dog", "lot", "log", "cog"};
+
         System.out.println(solution(begin, target, words));
     }
 
