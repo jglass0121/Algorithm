@@ -5,6 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+
 public class 경쟁적_전염 {
     static class State implements Comparable<State> {
         int num;
