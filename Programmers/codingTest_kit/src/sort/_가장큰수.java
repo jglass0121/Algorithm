@@ -17,15 +17,15 @@ public class _가장큰수 {
         }
 
         Arrays.sort(arr, new Comparator<String>() {
-            @Override
-            public int compare(String s1, String s2) {
-                String case1 = s1 + s2;
-                System.out.println("case1 = " + case1);
-                String case2 = s2 + s1;
-                System.out.println("case2 = " + case2);
-                System.out.println("----------------");
-                return case2.compareTo(case1);
-            }
+                @Override
+                public int compare(String s1, String s2) {
+                    String case1 = s1 + s2;
+                    System.out.println("case1 = " + case1);
+                    String case2 = s2 + s1;
+                    System.out.println("case2 = " + case2);
+                    System.out.println("----------------");
+                    return case2.compareTo(case1);
+                }
         });
 
         if (arr[0].equals("0")) {
