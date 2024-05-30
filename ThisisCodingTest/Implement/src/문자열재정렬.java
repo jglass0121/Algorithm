@@ -20,9 +20,11 @@ public class 문자열재정렬 {
 
 
         Collections.sort(arr);
-        String res = String.join("", arr)+sum;
-        System.out.println("res = " + res);
-
+        String res = String.join("", arr);
+        if (sum != 0) {
+            res += sum;
+        }
+        System.out.println(res.trim());
 
 
 
