@@ -39,7 +39,7 @@ public class 성적이_낮은_순서대로_출력 {
             @Override
             public int compare(Student o1, Student o2) {
                 return o1.getScore() - o2.getScore();
-            }
+            } // 오름차순
         });
 
         for (int i = 0; i < students.size(); i++) {
