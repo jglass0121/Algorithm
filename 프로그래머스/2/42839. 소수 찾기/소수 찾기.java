@@ -12,13 +12,13 @@ class Solution {
     }
         private static void fac(String[] numbers, String num) {
         //소수판결 후
-        try {
-            int number = Integer.parseInt(num);
-            if(check(number)) res.add(number);
-
-        } catch (Exception e) {
-
+          if(!num.isEmpty()){
+            if (!num.startsWith("0")) {
+                int number = Integer.parseInt(num);
+                if(check(number)) res.add(number);
+            }
         }
+
 
         for (int i = 0; i < numbers.length; i++) {
 
