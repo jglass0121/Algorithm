@@ -1,3 +1,5 @@
+package 실버4;
+
 public class SelfNumber {
     public static void main(String[] args) {
         // 1부터 10000까지의 수를 저장할 배열
