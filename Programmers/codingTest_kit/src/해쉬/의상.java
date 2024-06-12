@@ -20,7 +20,7 @@ public class 의상 {
     private static int solution(String[][] clothes) {
         HashMap<String, Integer> map = new HashMap<>();
         for (int i = 0; i < clothes.length; i++) {
-            String[] clothe = clothes[i];
+             String[] clothe = clothes[i];
             map.put(clothe[1], map.getOrDefault(clothe[1], 0) + 1);
 
         }

@@ -19,7 +19,7 @@ public class AddBinary {
             if(j>=0) sum += a.charAt(j--) - '0';
 
             result.insert(0, sum % 2); //계산된 합의 나머지를 결과 문자열의 맨 앞에 추가
-            carry = sum / 2; // 다음 자릿수로의 carry 값을 계산합니다
+            carry = sum / 2;
         }
         return result.toString();
 
