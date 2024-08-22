@@ -6,7 +6,7 @@ public class 날짜계산 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] split = sc.nextLine().split(" ");
-        int e = 0, s = 0, m = 0;gu
+        int e = 0, s = 0, m = 0;
         int res = 0;
         while (true) {
             e++;
