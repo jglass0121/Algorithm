@@ -45,7 +45,7 @@ public class 음료수_얼려_먹기 {
         int result = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                // 현재 위치에서 DFS 수행
+                // 현재 위치에서 DFS  수행
                 if (dfs(i, j)) {
                     result += 1;
                 }
