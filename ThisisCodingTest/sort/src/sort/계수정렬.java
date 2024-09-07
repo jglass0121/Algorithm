@@ -1,3 +1,5 @@
+package sort;
+
 import java.util.*;
 
 public class 계수정렬 {
