@@ -15,8 +15,8 @@ public class BubbleSort {
         int ar[] = {6, 2, 3, 6, 2, 1, 3};
         int idx, tmp;
         for (int i = ar.length-1; i >=0; i--) { // 고장
-                    for (int j = 0; j < i; j++) {
-                        if (ar[j] > ar[j + 1]) {
+            for (int j = 0; j < i; j++) {
+                if (ar[j] > ar[j + 1]) {
                     tmp = ar[j];
                     ar[j] = ar[j + 1];
                     ar[j + 1] = tmp;

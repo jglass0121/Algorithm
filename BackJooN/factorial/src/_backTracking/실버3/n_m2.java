@@ -31,7 +31,6 @@ public class n_m2 {
             return;
         }
         for (int i = at; i <= N; i++) {
-
             arr[depth] = i;
             dfs(i + 1, depth + 1);
         }
