@@ -31,7 +31,6 @@ public class N과M1 {
                 arr[depth] = i + 1;
                 fac(n, m, depth + 1);
                 visited[i] = false;
-
             }
 
         }

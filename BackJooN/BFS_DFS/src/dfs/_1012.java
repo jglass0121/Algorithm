@@ -1,63 +1,53 @@
 package dfs;
 
-import javax.swing.*;
 import java.util.Scanner;
 
 public class _1012 {
-    static int[] x = {1, 0, -1, 0};
-    static int[] y = {0, 1, 0, -1};
     static int[][] arr;
-    static int N;
+    static int cnt = 0;
     static int M;
+    static int N;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
-
-
+        sc.nextLine();
         for (int i = 0; i < num; i++) {
-             M = sc.nextInt(); //가로
-             N = sc.nextInt(); // 세로
-             arr = new int[M][N];
-            int position = sc.nextInt();
-            sc.nextLine();
-
-            for (int j = 0; j < position; j++) {
-                int x = sc.nextInt();
-                int y = sc.nextInt();
-                sc.nextLine();
-                arr[x][y] = 1;
+            String[] split = sc.nextLine().split(" ");
+             M = Integer.parseInt(split[0]);
+             N = Integer.parseInt(split[1]);
+            int K = Integer.parseInt(split[2]);
+            arr = new int[M][N];
+            for (int j = 0; j < K; j++) {
+                String[] xy = sc.nextLine().split(" ");
+                int X = Integer.parseInt(xy[0]);
+                int Y = Integer.parseInt(xy[1]);
+                arr[X][Y] = 1;
             }
 
-            int result = 0;
             for (int j = 0; j < M; j++) {
                 for (int k = 0; k < N; k++) {
                     if (arr[j][k] == 1) {
-                        fac(j, k);
-                        result++;
+                        dfs(j,k);
+                        cnt += 1;
                     }
-
                 }
             }
-            System.out.println(result);
-
-
+            System.out.println(cnt);
+            cnt = 0;
         }
+
     }
 
-    private static void fac(int startX, int startY) {
-        if (startX < 0 || startY < 0 || startX >= M || startY >= N) {
-            return;
+    private static void dfs(int x, int y) {
+        if(x<0||x>= M||y<0||y>=N) return;
+        if(arr[x][y]==0) return;
+        if (arr[x][y] == 1) {
+            arr[x][y] = 0;
+            dfs(x + 1, y);
+            dfs(x , y+1);
+            dfs(x -1, y);
+            dfs(x , y-1);
         }
-        if (arr[startX][startY] == 0) {
-            return;
-        }
-
-        arr[startX][startY] = 0;
-        for (int i = 0; i < 4; i++) {
-            int nextX = startX + x[i];
-            int nextY = startY + y[i];
-            fac(nextX, nextY);
-        }
-
     }
 }
