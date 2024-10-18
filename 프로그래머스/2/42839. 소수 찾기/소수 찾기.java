@@ -1,42 +1,50 @@
-import java.util.HashSet;
-
+import java.util.*;
 class Solution {
-    static boolean[] visited;
-    static HashSet<Integer> res =  new HashSet<Integer>();
+    static boolean[] visited = new boolean[7]; // numbers는 길이 1 이상 7 이하인 문자열
 
+    static Set<Integer> set;
     public int solution(String numbers) {
-        String[] arr = numbers.split("");
-        visited = new boolean[arr.length];
-        fac(arr,"");
-        return res.size();
-    }
-        private static void fac(String[] numbers, String num) {
-        //소수판결 후
-          if(!num.isEmpty()){
-            if (!num.startsWith("0")) {
-                int number = Integer.parseInt(num);
-                if(check(number)) res.add(number);
+         int answer = 0;
+        set = new HashSet<>();
+        dfs(numbers, "", 0);
+
+        for (Integer num : set) {
+            if (isPrime(num)) {
+                answer++;
             }
         }
+        return answer;
+    }
+    
+    public static void dfs(String numbers, String s, int depth) {
+        // numbers 의 끝까지 다 탐색했다면 종료
+        if (depth > numbers.length()) {
+            return;
+        }
 
-
-        for (int i = 0; i < numbers.length; i++) {
-
-            if (!visited[i]) {
+        for (int i = 0; i < numbers.length(); i++) {
+            if(!visited[i]) {
                 visited[i] = true;
-                String num1 = num + numbers[i];
-                fac(numbers, num1);
+                set.add(Integer.parseInt(s + numbers.charAt(i)));
+                dfs(numbers ,s + numbers.charAt(i), depth + 1);
                 visited[i] = false;
             }
-
         }
     }
 
-    private static boolean check(int number) {
-        if(number <2 )return false;
-        for (int i = 2; i <= Math.sqrt(number); i++) {
-            if(number % i ==0) return false;
+    public static boolean isPrime(int n) {
+        if (n < 2) {
+            return false;
         }
+        // 에라토스테네스 체
+        for (int i = 2; i <= (int) Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+
         return true;
-    }
+    }   
+        
+    
 }
