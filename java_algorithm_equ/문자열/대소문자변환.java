@@ -12,11 +12,10 @@ public class 대소문자변환 {
     private static String solution(String str) {
         String answer = "";
         for(char s : str.toCharArray()){
-            String getText = "" + s;
             if (Character.isUpperCase(s)) { // 대문자
-                answer += getText.toLowerCase();
+                answer += Character.toLowerCase(s);
             } else { // 소문자
-                answer += getText.toUpperCase();
+                answer += Character.toUpperCase(s);
             }
 
         }
