@@ -20,9 +20,18 @@ public class 단어뒤집기 {
     private static  ArrayList<String>  solution(int n, String[] str) {
         ArrayList<String> answer = new ArrayList<>();
         for (String x : str) {
-            String temp = new StringBuilder(x).reverse().toString();
+            char[] s = x.toCharArray();
+            int lt = 0, rt = x.length()-1;
+            while (lt < rt){
+                char temp = s[lt];
+                s[lt] = s[rt];
+                s[rt] = temp;
+                lt++;
+                rt--;
+            }
+            String temp = String.valueOf(s); // String화 시키기
             answer.add(temp);
-
+            
         }
         return answer;
     }
