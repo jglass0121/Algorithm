@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class 문자_속_단어 {
 
     public static String solution(String str) {
         String answer = "";
