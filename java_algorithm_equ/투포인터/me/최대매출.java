@@ -20,7 +20,7 @@ public class 최대매출 {
         int max = 0;
         for (int i = 0; i < N - k-1; i++) {
             int sum = 0;
-            int start = i;c
+            int start = i;
             int idx = 0;
             for (int j = idx; j < k; j++) {
                 sum += arr[start];
