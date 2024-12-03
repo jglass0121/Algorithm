@@ -21,10 +21,11 @@ public class 매출액의_종류 {
         }
     }
 
+    // k = 4
     private static ArrayList<Integer> solution(int n, int k, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
         HashMap<Integer, Integer> map = new HashMap<>();
-        for (int i = 0; i < k - 1; i++) {
+        for (int i = 0; i < k - 1; i++) { // 0,1
             map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
 
