@@ -1,6 +1,5 @@
 package th;
 
-import jdk.incubator.vector.VectorOperators;
 
 import java.util.Collections;
 import java.util.Scanner;
