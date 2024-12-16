@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/정렬" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/해쉬" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/재귀함수" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Stack,Queue" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
