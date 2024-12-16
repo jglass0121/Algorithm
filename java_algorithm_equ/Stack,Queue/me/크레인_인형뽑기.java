@@ -5,7 +5,7 @@ import java.util.Scanner;
 import java.util.Stack;
 
 //stack
-//
+// 30분 정도
 public class 크레인_인형뽑기 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
