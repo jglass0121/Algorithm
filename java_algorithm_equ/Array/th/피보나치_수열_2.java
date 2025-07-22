@@ -3,7 +3,7 @@ package th;
 import java.util.Scanner;
 
 public class 피보나치_수열_2 {
-    public static void main(String[] args) {
+    public  static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
 
