@@ -1,6 +1,7 @@
 package me;
 
 import java.util.Scanner;
+//two point
 
 public class 연속_부분_수열 {
     // start. end , sum ,res
