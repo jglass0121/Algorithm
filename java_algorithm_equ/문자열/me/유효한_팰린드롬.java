@@ -1,3 +1,5 @@
+package me;
+
 import java.util.*;
 
 public class 유효한_팰린드롬 {
