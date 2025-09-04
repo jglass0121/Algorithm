@@ -1,55 +1,48 @@
 package queue;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
-/**
- * Queue
- * 
- */
+import java.util.*;
+//배열
 
 public class 기능개발 {
     public static void main(String[] args) {
-        int[] progresses = {95, 90, 99, 99, 80, 99};
-        int[] speeds = {1, 1, 1, 1, 1, 1};
-        solution(progresses,speeds);
+        int[] progresses = {93, 30, 55};
+        int[] speeds = {1, 30, 5};
+        solution(progresses, speeds);
     }
 
     private static int[] solution(int[] progresses, int[] speeds) {
+        List<Integer> list = new ArrayList<>();
+        int[] works = new int[progresses.length];
 
-        Queue<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < progresses.length; i++) {
-            int progress = progresses[i];
-            int speed = speeds[i];
-            int now = 100 - progress;
-            int day = now / speed;
-            int divide = now % speed;
-            if (divide != 0) { // 나머지가 있을 경우
-                day += 1; // 추가
+
+        for(int i = 0; i < speeds.length; i++){
+            works[i]  = (100 - progresses[i]) / speeds[i];
+            if ((100 - progresses[i]) % speeds[i] != 0){
+                works[i]  += 1;
             }
-            queue.add(day);
         }
 
-        int cnt = 1;
-        int first = queue.poll();
-        Queue<Integer> res = new LinkedList<>();
-        while (!queue.isEmpty()) {
-            Integer nowValue = queue.peek();
-            if (first >= nowValue) { // 증가
-                queue.poll();
-                cnt++;
-            }
-            if (first < nowValue) {
-                res.add(cnt);
-                first = queue.poll();
-                cnt = 1;
-            }
+        int x = works[0];
+        int count=1;
+        for(int i=1;i<progresses.length;i++){
 
+            if(x>=works[i]){
+                count+=1;
+            }else{
+                list.add(count);
+                count =1;
+                x= works[i];
+            }
         }
-        res.add(cnt);
-        return res.stream().mapToInt(i -> i.intValue()).toArray();
+        list.add(count);
 
+        int[] answer = new int[list.size()];
 
+        for (int i = 0; i <list.size(); i++) {
+            answer[i] = list.get(i);
+        }
 
+        return answer;
     }
+
 }
