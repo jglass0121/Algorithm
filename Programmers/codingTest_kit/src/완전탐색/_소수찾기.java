@@ -1,5 +1,7 @@
 package 완전탐색;
 
+import com.sun.source.tree.UsesTree;
+
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -14,6 +16,7 @@ public class _소수찾기 {
 
         HashSet<Integer> set = new HashSet<>();
         perm("", numbers, set,0);
+        System.out.println("set = " + set);
     }
 
     private static void perm(String prefix, String str, HashSet<Integer> set,int cnt) {
@@ -25,7 +28,6 @@ public class _소수찾기 {
             String str1 = str.substring(0, i) + str.substring(i + 1, n);
             perm(prefix + str.charAt(i), str1, set,cnt+1);
         }
-
 
     }
 }

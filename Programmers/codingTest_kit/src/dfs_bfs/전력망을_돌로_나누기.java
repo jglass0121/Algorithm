@@ -6,8 +6,6 @@ public class 전력망을_돌로_나누기 {
     public static void main(String[] args) {
         int n = 9;
         int[][] wires = {{1, 3}, {2, 3}, {3, 4}, {4, 5}, {4, 6}, {4, 7}, {7, 8}, {7, 9}};
-
-
         solution(n, wires);
 
     }
@@ -27,14 +25,11 @@ public class 전력망을_돌로_나누기 {
             list.get(wire[1]).add(wire[0]);
         }
 
-
-
         visited = new boolean[n + 1];
         int res = Integer.MAX_VALUE;
         for (int i = 1; i <= n; i++) {
             for (int j = 0; j < list.get(i).size(); j++) {
                 Integer next = list.get(i).get(j);
-
                 cnt = 0;
                 int nowNode = dfs(i, next);
                 cnt = 0;

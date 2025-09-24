@@ -8,7 +8,8 @@ public class 프로세스 {
         int priorities[] = {1, 1, 9, 1, 1, 1};
         int location = 0;
 
-        solution(priorities, location);
+        int solution = solution(priorities, location);
+        System.out.println("solution = " + solution);
     }
 
     private static int solution(int[] priorities, int location) {
@@ -20,10 +21,16 @@ public class 프로세스 {
         }
 
         while (!queue.isEmpty()) {
+            System.out.println(queue);
             for (int i = 0; i < priorities.length; i++) {
                 if (queue.peek() == priorities[i]) {
+                    System.out.println("queue.peek() = " + queue.peek());
+                    System.out.println("priorities = " + priorities[i]);
                     queue.poll();
+                    System.out.println("queue 12= " + queue);
                     answer++;
+                    System.out.println("location = " + location);
+                    System.out.println("i = " + i);
                     if (location == i) {
                         return answer;
                     }

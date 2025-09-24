@@ -24,7 +24,6 @@ public class K번째수2 {
             answer[i] = res;
         }
 
-
         return answer;
     }
 }
