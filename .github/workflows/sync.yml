@@ -1,4 +1,4 @@
-name: Sync to B repo
+name: Sync
 
 on:
   push:
