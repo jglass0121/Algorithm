@@ -16,5 +16,5 @@ jobs:
 
       - name: Push to B repo
         run: |
-          git remote add mirror https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/${{ secrets.TARGET_REPO_URL }}
+          git remote add mirror https://x-access-token:${{ secrets.TARGET_REPO_PAT }}@github.com/${{ secrets.TARGET_URL }}
           git push --mirror mirror
