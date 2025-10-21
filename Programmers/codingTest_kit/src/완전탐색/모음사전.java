@@ -1,6 +1,6 @@
 package 완전탐색;
 
-public class 모음사전 {
+public class   모음사전 {
 
     public static void main(String[] args) {
         String word = "AAAE";
