@@ -18,7 +18,7 @@ public class 소수합 {
                 return false;
             }
 
-        }t
+        }
         return true;
     }
 }
