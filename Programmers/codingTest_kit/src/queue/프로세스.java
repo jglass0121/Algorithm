@@ -19,6 +19,7 @@ public class 프로세스 {
         for (int i : priorities) {
             queue.offer(i);
         }
+        System.out.println("queue1 = " + queue);
 
         while (!queue.isEmpty()) {
             System.out.println(queue);
