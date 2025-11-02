@@ -18,7 +18,7 @@ public class 연속_부분_수열 {
         int[] arr = new int[str_M.length];
         for (int i = 0; i < str_M.length; i++) {
             arr[i] = Integer.parseInt(str_M[i]);
-        }
+        }                                                    
         solution(N, M, arr);
     }
     // 총 3명
