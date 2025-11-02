@@ -1,7 +1,7 @@
 package me;
 
 import java.util.Scanner;
-
+//g
 public class 최대_매출 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
