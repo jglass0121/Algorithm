@@ -13,7 +13,8 @@ public class 최대_매출 {
         for (int i = 0; i < one; i++) {
             arr[i] = sc.nextInt();
         }
-        
+
+
         int max = -1;
         for (int i = 0; i < one-two; i++) {
             int cnt = 0;
