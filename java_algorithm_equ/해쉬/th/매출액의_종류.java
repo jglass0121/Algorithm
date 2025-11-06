@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//윈도우 슬라이드
 public class 매출액의_종류 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
