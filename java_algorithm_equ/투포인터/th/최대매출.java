@@ -1,7 +1,7 @@
 package th;
 
 import java.util.Scanner;
-
+//슬라이스 윈도우
 public class 최대매출 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

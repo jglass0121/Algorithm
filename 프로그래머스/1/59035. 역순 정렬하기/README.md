@@ -1,6 +1,6 @@
-# [level 2] 최솟값 구하기 - 59038 
+# [level 1] 역순 정렬하기 - 59035 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59038) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/59035) 
 
 ### 성능 요약
 
@@ -8,7 +8,7 @@
 
 ### 구분
 
-코딩테스트 연습 > SUM， MAX， MIN
+코딩테스트 연습 > SELECT
 
 ### 채점결과
 
@@ -16,7 +16,7 @@ Empty
 
 ### 제출 일자
 
-2025년 10월 24일 20:49:14
+2025년 10월 25일 18:00:21
 
 ### 문제 설명
 
@@ -60,67 +60,36 @@ Empty
 </tr>
 </tbody>
       </table>
-<p>동물 보호소에 가장 먼저 들어온 동물은 언제 들어왔는지 조회하는 SQL 문을 작성해주세요. </p>
-
-<h5>예시</h5>
-
-<p>예를 들어 <code>ANIMAL_INS</code> 테이블이 다음과 같다면</p>
+<p>동물 보호소에 들어온 모든 동물의 이름과 보호 시작일을 조회하는 SQL문을 작성해주세요. 이때 결과는 ANIMAL_ID 역순으로 보여주세요. SQL을 실행하면 다음과 같이 출력되어야 합니다.</p>
 <table class="table">
         <thead><tr>
-<th>ANIMAL_ID</th>
-<th>ANIMAL_TYPE</th>
-<th>DATETIME</th>
-<th>INTAKE_CONDITION</th>
 <th>NAME</th>
-<th>SEX_UPON_INTAKE</th>
+<th>DATETIME</th>
 </tr>
 </thead>
         <tbody><tr>
-<td>A399552</td>
-<td>Dog</td>
-<td>2013-10-14 15:38:00</td>
-<td>Normal</td>
-<td>Jack</td>
-<td>Neutered Male</td>
+<td>Rocky</td>
+<td>2016-06-07 09:17:00</td>
 </tr>
 <tr>
-<td>A379998</td>
-<td>Dog</td>
-<td>2013-10-23 11:42:00</td>
-<td>Normal</td>
-<td>Disciple</td>
-<td>Intact Male</td>
+<td>Shelly</td>
+<td>2015-01-29 15:01:00</td>
 </tr>
 <tr>
-<td>A370852</td>
-<td>Dog</td>
-<td>2013-11-03 15:04:00</td>
-<td>Normal</td>
-<td>Katie</td>
-<td>Spayed Female</td>
+<td>Benji</td>
+<td>2016-04-19 13:28:00</td>
 </tr>
 <tr>
-<td>A403564</td>
-<td>Dog</td>
-<td>2013-11-18 17:03:00</td>
-<td>Normal</td>
-<td>Anna</td>
-<td>Spayed Female</td>
+<td>Jackie</td>
+<td>2016-01-03 16:25:00</td>
+</tr>
+<tr>
+<td>*Sam</td>
+<td>2016-03-13 11:17:00</td>
 </tr>
 </tbody>
       </table>
-<p>가장 먼저 들어온 동물은 Jack이고, Jack은 2013-10-14 15:38:00에 들어왔습니다. 따라서 SQL문을 실행하면 다음과 같이 나와야 합니다.</p>
-<table class="table">
-        <thead><tr>
-<th>시간</th>
-</tr>
-</thead>
-        <tbody><tr>
-<td>2013-10-14 15:38:00</td>
-</tr>
-</tbody>
-      </table>
-<p>※ 컬럼 이름(위 예제에서는 "시간")은 일치하지 않아도 됩니다.</p>
+<p>..이하 생략</p>
 
 <hr>
 

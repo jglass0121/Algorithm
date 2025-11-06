@@ -1,18 +1,15 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
+import java.util.*;
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
-        
-          Queue<Integer> queue = new LinkedList<>();
+      Queue<Integer> queue = new LinkedList<>();
         for (int i = 0; i < progresses.length; i++) {
             int progress = progresses[i];
             int speed = speeds[i];
             int now = 100 - progress;
             int day = now / speed;
             int divide = now % speed;
-            if (divide != 0) {
-                day += 1;
+            if (divide != 0) { // 나머지가 있을 경우
+                day += 1; // 추가
             }
             queue.add(day);
         }
