@@ -29,4 +29,4 @@ public class 연속_부분_수열 {
         }
         return answer;
     }
-}
+ }
