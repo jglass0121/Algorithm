@@ -35,7 +35,7 @@ public class 매출액의_종류 {
             answer.add(map.size());
             map.put(arr[lt], map.get(arr[lt]) - 1); // 옆으로 이동
             if (map.get(arr[lt]) == 0) { //count될 수있어서
-                map.remove(arr[lt]); //키 삭제
+                map.remove(arr[lt]); //키 삭제Q
             }
             lt++;
 
