@@ -1,6 +1,3 @@
-
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Main {
@@ -9,39 +6,21 @@ public class Main {
         int A = sc.nextInt();
         int B = sc.nextInt();
         int C = sc.nextInt();
-        long res = A * B * C;
-        String str = "" + res;
-        int[] arr = new int[10];
 
-        int cnt = 0;
+        long res = (long) A * B * C; // 곱셈 결과
+        String str = String.valueOf(res); // 문자열로 변환
 
-        HashSet<Integer> set = new HashSet<>();
+        int[] arr = new int[10]; // 0~9 카운트 배열
+
+        // 문자열 한 번만 순회하면서 카운트
         for (int i = 0; i < str.length(); i++) {
-            set.add(Integer.parseInt(String.valueOf(str.charAt(i))));
+            int num = str.charAt(i) - '0'; // 문자 -> 숫자
+            arr[num]++;
         }
 
-        set.stream().sorted();
-
-
-        ArrayList<Integer> list = new ArrayList<>(set);
-
-        //str에서 중복제거
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = 0; j < str.length(); j++) {
-                String strI = "" + list.get(i);
-                String s = "" + str.charAt(j);
-                if (strI.equals(s)) {
-                    cnt++;
-                }
-            }
-
-            arr[list.get(i)] = cnt;
-            cnt = 0;
-        }
-
+        // 결과 출력
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
-
     }
 }
