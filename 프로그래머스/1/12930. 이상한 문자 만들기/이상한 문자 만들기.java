@@ -1,22 +1,26 @@
 class Solution {
     public String solution(String s) {
-          String[] split = s.split("");
-        String answer = "";
+         String answer = "";
+        int idx = 0; // 단어 내부 인덱스 (짝/홀)
 
-        int idx = 0;
-        for (int i = 0; i < split.length; i++) {
+        for (int i = 0; i < s.length(); i++) {
+            char d = s.charAt(i);
 
-            if (split[i].equals(" ")) {
-                idx = 0;
-            } else if (idx % 2 == 0) {
-                split[i] = split[i].toUpperCase();
-                idx++;
-            } else if (idx % 2 != 0) {
-                split[i] = split[i].toLowerCase();
-                idx++;
+            if (d == ' ') {
+                answer += " ";
+                idx = 0; // 단어 리셋
+                continue;
             }
-            answer += split[i];
+
+            if (idx % 2 == 0) { // 짝수
+                answer += Character.toUpperCase(d);
+            } else {            // 홀수
+                answer += Character.toLowerCase(d);
+            }
+            idx++;
         }
         return answer;
+        
+        
     }
 }
