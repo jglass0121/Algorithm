@@ -1,13 +1,16 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
-
+//stack 으로 해결
 public class 탑 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int num = Integer.parseInt(br.readLine());
         int[] arr = new int[num];
+        String[] split = br.readLine().split(" ");
         for (int i = 0; i < num; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = Integer.parseInt(split[i]);
         }
 
         solution(arr);
