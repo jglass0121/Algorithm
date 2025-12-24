@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//ㄴ
 public class 상하좌우 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
