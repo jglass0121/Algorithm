@@ -1,31 +1,23 @@
 class Solution {
     public int[] solution(String s) {
-        // 0의 개수,
-        int zeroCnt = 0;
-        int idx = 0;
+       int zeroCnt = 0;
+    int idx = 0;
 
-        while (!s.equals("1")) {
+    while (!s.equals("1")) {
+        int beforeLen = s.length();
 
-            // 1️⃣ 0 제거
-            StringBuilder sb = new StringBuilder();
-            for (char c : s.toCharArray()) {
-                if (c == '0') zeroCnt++;
-                else sb.append(c);
-            }
+        // 1️⃣ 0 제거
+        s = s.replaceAll("0", "");
 
-            // 2️⃣ 길이를 이진수로 변환
-            int len = sb.length();
+        // 제거된 0 개수
+        zeroCnt += beforeLen - s.length();
 
-            StringBuilder binary = new StringBuilder();
-            while (len > 0) {
-                binary.append(len % 2);
-                len /= 2;
-            }
+        // 2️⃣ 길이를 이진수로 변환
+        s = Integer.toBinaryString(s.length());
 
-            s = binary.reverse().toString();
-            idx++;
-        }
+        idx++;
+    }
 
-        return new int[]{idx, zeroCnt};
+    return new int[]{idx, zeroCnt};
     }
 }
