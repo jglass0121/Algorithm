@@ -14,10 +14,10 @@ public class 화페구성 {
 
         int[] dp = new int[100];
         Arrays.fill(dp,10001);
-        dp[0] = 0;
-        for (int i = 0; i < one; i++) {
-            for (int j = arr[i]; j <= two; j++) {
-                if (dp[j - arr[i]] != 10001) {
+        dp[0] = 0; // 금액 x를 만들기 위한 최소 화폐 개수
+        for (int i = 0; i < one; i++) { // 화폐 단위
+            for (int j = arr[i]; j <= two; j++) { //금액
+                if (dp[j  - arr[i]] != 10001) {
                     dp[j] = Math.min(dp[j], dp[j - arr[i]] + 1);
                 }
                 System.out.println("dp["+j+"] = " + dp[j]);
