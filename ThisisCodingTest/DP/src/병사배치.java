@@ -14,8 +14,10 @@ public class 병사배치 {
             v.add(sc.nextInt());
         }
 
+        System.out.println("v = " + v);
         // 순서를 뒤집어 '최장 증가 부분 수열' 문제로 변환
         Collections.reverse(v);
+        System.out.println("v = " + v);
 
         // 다이나믹 프로그래밍을 위한 1차원 DP 테이블 초기화
         for (int i = 0; i < n; i++) {
