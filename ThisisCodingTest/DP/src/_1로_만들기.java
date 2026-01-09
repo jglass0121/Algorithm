@@ -7,6 +7,7 @@ public class _1로_만들기 {
         System.out.println(fibo(num));
     }
 
+    //dp[x] = 정수 x를 1로 만드는 데 필요한 최소 연산 횟수
     static int[]  dp = new int[100]; //수
 
     //1의 경우 자기자신이 1이기에 연산 수행x ->  0으로 초기화
