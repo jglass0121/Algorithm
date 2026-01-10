@@ -11,7 +11,7 @@ public class 화페구성 {
         for (int i = 0; i < one; i++) {
             arr[i] = sc.nextInt();
         }
-
+// 금액 i를 만들 수있는최소한의 화폐개수
         int[] dp = new int[100];
         Arrays.fill(dp,10001);
         dp[0] = 0; // 금액 x를 만들기 위한 최소 화폐 개수
