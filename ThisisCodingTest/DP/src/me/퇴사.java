@@ -1,5 +1,6 @@
 package me;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class 퇴사 {
@@ -19,6 +20,7 @@ public class 퇴사 {
 
         for (int i = 1; i <= n; i++) {
 
+            System.out.println("i = " + i);
             // 상담 안 하는 경우
             dp[i + 1] = Math.max(dp[i + 1], dp[i]);
 
@@ -26,6 +28,9 @@ public class 퇴사 {
             if (i + t[i] <= n + 1) {
                 dp[i + t[i]] = Math.max(dp[i + t[i]], dp[i] + p[i]);
             }
+
+            System.out.println(Arrays.toString(dp));
+            System.out.println();
         }
 
         System.out.println(dp[n + 1]);
