@@ -18,5 +18,6 @@ public class 수열추측하기 {
         }
         // depth+1만큼의 수로
 
+
     }
 }
