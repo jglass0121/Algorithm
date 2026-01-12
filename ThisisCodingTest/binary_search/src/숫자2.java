@@ -8,7 +8,6 @@ public class 숫자2 {
         int[] arr1 = new int[one];
         for (int i = 0; i < one; i++) {
             arr1[i] = sc.nextInt();
-
         }
 
 
