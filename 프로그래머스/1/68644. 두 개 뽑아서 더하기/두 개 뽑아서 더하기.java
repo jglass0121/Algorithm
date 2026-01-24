@@ -1,34 +1,23 @@
-// 투포인터
 import java.util.*;
 class Solution {
     public int[] solution(int[] numbers) {
-                TreeSet<Integer> set = new TreeSet<>();
-
-        int start = 0;
-        int end = 1;
-
-        // 너의 코드 스타일 그대로: 투포인터 while 구조 유지
-        while (start < numbers.length - 1) {
-
-            // end가 배열 끝을 넘으면 start 증가
-            if (end >= numbers.length) {
-                start++;
-                end = start + 1;
-                continue;
+        Arrays.sort(numbers);
+        HashSet<Integer> set =  new HashSet<Integer>();
+        for(int i=0 ;i< numbers.length-1; i++ ){
+            for(int j=i+1;j <numbers.length; j++){
+                set.add(numbers[i]+numbers[j]);
             }
-
-            // 정상 범위면 합 추가
-            set.add(numbers[start] + numbers[end]);
-
-            // end 이동
-            end++;
+        }
+        
+        
+        int[] answer = new int[set.size()];
+        int idx = 0;
+        for (int num : set) {
+            answer[idx++] = num;
         }
 
+        Arrays.sort(answer); // 문제 요구사항: 오름차순
 
-        
-int[] arr = set.stream()
-               .mapToInt(Integer::intValue)
-               .toArray();
-        return arr;
+        return answer;
     }
 }
