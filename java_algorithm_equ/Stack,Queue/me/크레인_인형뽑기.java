@@ -31,6 +31,7 @@ public class 크레인_인형뽑기 {
                 if (!stack.isEmpty()) {// stack이 비어있지 않은 경우,
                     Integer peek = stack.peek();
                     if (peek == currentValue) { //
+                        System.out.println("peek = " + peek);
                         stack.pop();
                         arr[j][nowNum] = 0;
                         answer += 2;
