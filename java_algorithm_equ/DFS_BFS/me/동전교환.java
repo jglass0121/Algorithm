@@ -39,7 +39,6 @@ public class 동전교환 {
 
 
         for (int i = 0; i < arr.length; i++) {
-
             fac(depth + 1, m, arr, arr[i]+sum);
         }
 
