@@ -1,9 +1,6 @@
 package th;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 class Lecture implements Comparable<Lecture> {
     public int money;
@@ -31,7 +28,7 @@ public class 최대수입스케줄 {
             int m = sc.nextInt();
             int d = sc.nextInt();
             arr.add(new Lecture(m, d));
-            if(d  > max) max = d;
+            if(d  > max) max = d; // 가장 큰 값 찾기
         }
 
         System.out.println(solution(arr));
@@ -41,14 +38,18 @@ public class 최대수입스케줄 {
         int answer = 0;
         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         Collections.sort(arr);
-        int j = 0;
-        for (int i = max; i >= i; i--) {
-            for (; j < n; j++) {
+        int idx =0 ;
+        for (int i = max; i >= 1; i--) { // 큰값부터
+            for (int j = idx; j < n; j++) {
                 if (arr.get(j).time < i) break;
-                pq.add(arr.get(j).money);
+                int money = arr.get(j).money;
+                pq.add(money);
+                idx++;
             }
+
             if (!pq.isEmpty()) {
-                answer+=pq.poll();
+                Integer poll = pq.poll();
+                answer+= poll;
             }
 
         }
