@@ -18,15 +18,15 @@ public class 뮤직비디오 {
 
     private static int solution(int n, int m, int[] arr) {
         int answer = 0;
-        int lt = Arrays.stream(arr).max().getAsInt();
+        int lt = Arrays .stream(arr).max().getAsInt();
         int rt = Arrays.stream(arr).sum();
 
         while (lt <= rt) {
             int mid = (lt + rt) / 2;
-            if (count(arr, mid) <= m) {
+            if (count(arr, mid) <= m) { //가능
                 answer = mid;
                 rt = mid - 1;
-            } else {
+            } else { //
                 lt=mid+1;
             }
         }
