@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7259633a-c4c0-462a-a20d-aa4a92398aa2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java_algorithm_equ/정렬/th/마구간_정하기.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../String/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../String/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java_algorithm_equ/정렬/th/뮤직비디오.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java_algorithm_equ/정렬/th/뮤직비디오.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +43,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/user/Desktop/전유진/Algorithm/백준",
+    "last_opened_file_path": "C:/Users/user/Desktop/전유진/Algorithm/java_algorithm_equ",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
