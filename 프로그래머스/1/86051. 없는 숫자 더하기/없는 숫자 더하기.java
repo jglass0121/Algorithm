@@ -2,23 +2,27 @@ import java.util.*;
 class Solution {
     public int solution(int[] numbers) {
         int answer = 0;
-        int idx =0;
-        Arrays.sort(numbers);
-        int lastNum= numbers[numbers.length-1];
-        for(int i=0; i<10; i++){
-            if(i == lastNum){
-                break;
-            }
-            
-            if(numbers[idx]!= i){
-                answer += i;
-            }else{
-                idx++;
-            }
+        int[] arr = new int[10];
+        for(int i =0; i<arr.length; i++){
+            arr[i] = i;
         }
         
-        for(int i = lastNum+1; i< 10; i++){
-            answer +=i;
+        Arrays.sort(numbers);
+        
+        int lt1=0, lt2=0;
+        while(lt2 != numbers.length){
+            
+            if(arr[lt1] != numbers[lt2]){
+                answer+=arr[lt1];
+                lt1++;
+                continue;
+            }
+            lt1++;
+            lt2++;
+        }
+
+        for(int i=lt1;i<arr.length;i++){
+            answer+=arr[i];
         }
         
         return answer;
