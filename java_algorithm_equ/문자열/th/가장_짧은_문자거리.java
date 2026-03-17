@@ -20,7 +20,7 @@ public class 가장_짧은_문자거리 {
         for(int i=str.length()-1; i>=0; i--){
             if(str.charAt(i) != c) {
                 p++;
-                if(answer[i] > p) answer[i] = p;
+                answer[i] = Math.min(answer[i], p);
             } else {
                 p=0;
             }
