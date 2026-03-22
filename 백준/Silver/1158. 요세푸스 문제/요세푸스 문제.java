@@ -1,5 +1,5 @@
-
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Main {
@@ -11,26 +11,31 @@ public class Main {
     }
 
     private static void solution(int n, int k) {
-        LinkedList<Integer> list = new LinkedList<>();
-        for (int i = 1; i <= n; i++) {
-            list.add(i);
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
+            queue.add(i + 1);
         }
 
-        int idx = 0;
         StringBuilder sb = new StringBuilder();
+        int idx= 0;
         sb.append("<");
-        while (list.size() != 0) {
-            int i = (idx + k - 1) % list.size();
-            Integer remove = list.remove(i);
-            sb.append(remove);
-            if (list.size() != 0) {
-                sb.append(", ");
-            }
-            idx = i;
-        }
+        while (!queue.isEmpty()) {
+            idx++;
 
-        sb.append(">");
-        System.out.println(sb.toString());
+            if (idx == k) {
+                idx = 0;
+                if (queue.size() == 1) {
+                    sb.append(queue.poll()).append(">");
+                }else{
+                    sb.append(queue.poll()).append(", ");
+                }
+            }else{
+                Integer poll = queue.poll();
+                queue.add(poll);
+            }
+        }
+        System.out.println(sb);
+
 
     }
 }
