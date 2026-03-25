@@ -2,7 +2,7 @@ package _11;
 
 import java.util.Stack;
 
-public class _괄호_회전하기2 {
+public class _괄호_회전하기 {
     public static void main(String[] args) {
         //s의  len까지 for문
         // 올바른 문자열 - +1
