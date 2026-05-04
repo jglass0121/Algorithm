@@ -1,27 +1,42 @@
+import java.util.*;
 class Solution {
+    static LinkedList<LinkedList<Integer>> list;
+    static boolean[] visited;
+    private static void DFS(int x) {
+        visited[x] = true;
+        for (int j = 0; j < list.get(x).size(); j++) {
+            Integer next = list.get(x).get(j);
+            if (!visited[next]) {
+                visited[next] =true;
+                DFS(next);
+            }
+        }
+    }
     public int solution(int n, int[][] computers) {
-        int answer = 0;
-    boolean[] check = new boolean[n]; // n 갯수만큼 boolean 배열을 만들고 모든 요소를 false로 초기화
+       
+        list = new LinkedList<>();
+        visited = new boolean[n];
+        for (int i = 0; i < n; i++) {
+            list.add(new LinkedList<Integer>());
+        }
 
-    for (int i = 0; i < n; i++) {
-      if (!check[i]) {
-        dfs(computers, i, check);
-        answer++;
-      }
+        for (int i = 0; i < computers.length; i++) {
+            for (int j = 0; j < computers.length; j++) {
+                if (computers[i][j] == 1) {
+                    list.get(i).add(j);
+                }
+            }
+        }
+
+        //dfs
+        int cnt = 0;
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                DFS(i);
+                cnt++;
+            }
+        }
+        
+        return cnt;
     }
-
-    return answer;
-    }
-    
-      boolean[] dfs(int[][] computers, int i, boolean[] check) {
-    check[i] = true;
-
-    for (int j = 0; j < computers.length; j++) {
-      if (i != j && computers[i][j] == 1 && check[j] == false) {
-        check = dfs(computers, j, check);
-      }
-    }
-    return check;
-  }
-
 }
