@@ -22,6 +22,7 @@ class Solution {
         if(cnt == tickets.length){
             // 6. pq에 전체 여행 경로를 추가
             pq.add(path);
+
             return;
         }
         for(int i=0;i<tickets.length;i++){
