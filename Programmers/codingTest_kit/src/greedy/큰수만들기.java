@@ -1,4 +1,4 @@
-package greedy;
+package Greedy;
 
 public class 큰수만들기 {
     public static void main(String[] args) {
