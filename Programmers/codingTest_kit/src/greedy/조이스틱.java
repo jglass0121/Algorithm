@@ -1,4 +1,4 @@
-package greedy;
+package Greedy;
 
 public class 조이스틱 {
     public static void main(String[] args) {
