@@ -1,34 +1,33 @@
 import java.util.*;
 class Solution {
     public int solution(int[] priorities, int location) {
-  Queue<int[]> queue = new LinkedList<>();
+     // [우선순위, 원본 인덱스]를 담는 큐
+        Queue<int[]> queue = new LinkedList<>();
+        // 우선순위 최댓값을 빠르게 꺼내기 위한 내림차순 힙
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
 
         for (int i = 0; i < priorities.length; i++) {
-            queue.add(new int[]{i, priorities[i]}); // 인덱스. 우선순위
+            queue.add(new int[]{priorities[i], i});
+            pq.add(priorities[i]);
         }
 
         int answer = 0;
-        while (!queue.isEmpty()) {
-            int[] current = queue.poll();
-            boolean hasHiger = false;
-            for (int[] q : queue) {
-                if (q[1] > current[1]) { // q값이 현재값보다 높을 경우
-                    hasHiger = true;
-                    break;
-                }
-            }
 
-            if (hasHiger) {
-                queue.add(current); //q값뒤에 넣기
-            } else { // 아닐 경우
-                answer++; // 실행 경ㄹ과
-                if (current[0] == location) {
+        while (!queue.isEmpty()) {
+            int[] now = queue.poll();
+
+            // 현재 프로세스가 대기열 중 가장 높은 우선순위인 경우
+            if (now[0] == pq.peek()) {
+                pq.poll();
+                answer++;
+
+                if (now[1] == location) {
                     return answer;
                 }
-
+            } else {
+                queue.add(now);
             }
         }
-
 
         return answer;
     }
