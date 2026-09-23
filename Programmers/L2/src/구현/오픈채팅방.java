@@ -26,6 +26,7 @@ public class 오픈채팅방 {
                 map.put(id, name);
                 list.add(new String[]{id,"enter"});
 
+
             } else if (call.equals("Leave")) {
                 list.add(new String[]{id,"remove"});
 
