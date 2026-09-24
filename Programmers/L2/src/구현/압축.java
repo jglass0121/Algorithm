@@ -1,26 +1,26 @@
 package 구현;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class 압축 {
     public static void main(String[] args) {
         String msg = "KAKAO";
-        int[] result = solution(msg);
-        System.out.println("결과 = " + Arrays.toString(result));
+        System.out.println("res = " + solution(msg));
     }
 
-    public static int[] solution(String msg) {
-        // 1. 길이가 1인 모든 단어를 포함하도록 사전을 초기화한다.
+    private static ArrayList<Integer> solution(String msg) {
         HashMap<String, Integer> map = new HashMap<>();
+
+        // 1. 길이가 1인 모든 단어를 포함하도록 사전을 초기화한다.
         for (int i = 0; i < 26; i++) {
-            map.put(String.valueOf((char) ('A' + i)), i + 1);
+            String str = String.valueOf((char)('A' + i));
+            map.put(str, i + 1);
         }
 
         ArrayList<Integer> res = new ArrayList<>();
-        int nextIdx = 27; // 다음 사전에 등록될 단어의 색인 번호
-        int i = 0;        // 현재 읽고 있는 문자열의 위치
+        int dictIdx = 27; // 다음에 사전에 추가될 단어의 색인 번호
+        int i = 0;        // 현재 메시지 탐색 인덱스
 
         while (i < msg.length()) {
             String w = "";
@@ -34,13 +34,12 @@ public class 압축 {
             // 3. w에 해당하는 사전의 색인 번호를 출력한다.
             res.add(map.get(w));
 
-            // 4. 입력에서 처리되지 않은 다음 글자가 남아있다면(c), w+c를 사전에 등록한다.
+            // 4. 입력에서 처리되지 않은 다음 글자가 남아있다면(c), w+c에 해당하는 단어를 사전에 등록한다.
             if (i < msg.length()) {
-                map.put(w + msg.charAt(i), nextIdx++);
+                map.put(w + msg.charAt(i), dictIdx++);
             }
         }
 
-        // List를 int 배열로 변환하여 반환
-        return res.stream().mapToInt(Integer::intValue).toArray();
+        return res;
     }
 }
