@@ -44,7 +44,6 @@ public class 베스트앨범 {
         // play별로 정렬
         List<Genre> collect = list.stream().sorted((a, b) ->  b.play-a.play).collect(Collectors.toList());
 
-
         LinkedList<Integer> res =
 
                 new LinkedList<>();
